@@ -38,15 +38,45 @@
   }
   
   .footer-link {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 16px;
+    color: transparent; /* Make the text transparent to show the gradient */
+    background: linear-gradient(90deg, #8b5cf6, #561eff, #c4b5fd, #8b5cf6); /* Gradient colors */
+    background-size: 200%; /* Make the gradient larger for the animation */
+    background-clip: text;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    text-fill-color: transparent; /* For WebKit browsers */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    font-size: 24px;
     font-weight: 500;
-    transition: color 0.3s ease;
+    animation: gradient-move 3s infinite linear; /* Add animation */
   }
   
   .footer-link:hover {
-    color: white;
+    background: linear-gradient(90deg, #ffffff, #f3e8ff, #ffffff); /* Brighter gradient on hover */
+    background-size: 200%;
+    -webkit-background-clip: text; /* For WebKit browsers */
+    text-fill-color: transparent; /* For WebKit browsers */
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    transition: all 0.3s ease;
+    animation: gradient-move-hover 3s infinite linear; /* Faster animation on hover */
+  }
+  
+  /* Keyframes for the moving gradient */
+  @keyframes gradient-move {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  @keyframes gradient-move-hover {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
   }
   
   .footer-right {
