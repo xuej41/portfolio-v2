@@ -14,9 +14,9 @@ const CTA = () => {
             <Link to="/contact" className="btn btn-primary">
               Contact btn
             </Link>
-            <Link to="/projects" className="btn btn-outline">
-              View Portfolio
-            </Link>
+            <a href="https://www.joshx.tech/resume.pdf" target="_blank" className="btn btn-outline">
+              View my Resume
+            </a>
           </div>
         </div>
       </div>

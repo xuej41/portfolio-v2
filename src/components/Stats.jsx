@@ -5,26 +5,18 @@ import "./Stats.css"
 
 const Stats = () => {
   const skills = [
-    { name: "HTML", image: "/vite.svg" },
-    { name: "CSS", image: "/placeholder.svg?height=60&width=60" },
-    { name: "JavaScript", image: "/placeholder.svg?height=60&width=60" },
-    { name: "React", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Vite", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Next.js", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Node.js", image: "/placeholder.svg?height=60&width=60" },
-    { name: "TypeScript", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Python", image: "/placeholder.svg?height=60&width=60" },
-    { name: "MongoDB", image: "/placeholder.svg?height=60&width=60" },
-    { name: "PostgreSQL", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Express", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Git", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Docker", image: "/placeholder.svg?height=60&width=60" },
-    { name: "AWS", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Firebase", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Tailwind", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Socket.io", image: "/placeholder.svg?height=60&width=60" },
-    { name: "GraphQL", image: "/placeholder.svg?height=60&width=60" },
-    { name: "Redux", image: "/placeholder.svg?height=60&width=60" },
+    { name: "Git", image: "/src/assets/skills/git.svg?height=60&width=60" },
+    { name: "Python", image: "/src/assets/skills/python.svg?height=60&width=60" },
+    { name: "C/C++", image: "/src/assets/skills/cpp.svg?height=60&width=60" },
+    { name: "Arduino", image: "/src/assets/skills/arduino.svg?height=60&width=60" },
+    { name: "Docker", image: "/src/assets/skills/docker.svg?height=60&width=60" },
+    { name: "HTML", image: "/src/assets/skills/html5.png?height=60&width=60" },
+    { name: "CSS", image: "/src/assets/skills/css3.png?height=60&width=60" },
+    { name: "JavaScript", image: "/src/assets/skills/js.svg?height=60&width=60" },
+    { name: "React", image: "/src/assets/skills/react.svg?height=60&width=60" },
+    { name: "Vite", image: "/src/assets/skills/vite.svg?height=50&width=50" },
+    { name: "Next.js", image: "/src/assets/skills/nextjs.svg?height=60&width=60" },
+    { name: "Node.js", image: "/src/assets/skills/nodejs.svg?height=60&width=60" },
   ]
 
   const [isPaused, setIsPaused] = useState(false)
@@ -46,7 +38,7 @@ const Stats = () => {
     if (!isPaused && !isTransitioning) {
       const animate = () => {
         setAnimationOffset((prev) => {
-          const newOffset = prev - 0.5 // Adjust speed as needed
+          const newOffset = prev - 1 // Adjust speed as needed
           // Reset when we've moved through one full set of skills
           const resetPoint = -(skills.length * 120) // 120px per skill (60px + 60px gap)
           return newOffset <= resetPoint ? 0 : newOffset
@@ -126,7 +118,7 @@ const Stats = () => {
           >
             {duplicatedSkills.map((skill, index) => (
               <div key={index} className="skill-item">
-                <img src={skill.image || "/placeholder.svg"} alt={skill.name} className="skill-image" />
+                <img src={skill.image || "/src/assets/skills/js.svg"} alt={skill.name} className="skill-image" />
                 <span className="skill-name">{skill.name}</span>
               </div>
             ))}
