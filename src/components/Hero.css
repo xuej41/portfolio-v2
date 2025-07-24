@@ -1,14 +1,15 @@
 .hero {
-  padding: 120px 0 80px;
+  /* padding: 120px 0 80px; */
   background: #1a1a1a;
   min-height: 100vh;
-  width: 100vw;
+  /* width: 100vw; Use 99vw to avoid horizontal scrollbar Find a way to fix this in future */
+  /* overflow-x: hidden; Not working */
+  /* max-width: 100%; */
   display: flex;
   align-items: center;
-  color: white;
 }
 
-.hero-container {
+ .hero-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -66,11 +67,26 @@
 .hero-title {
   font-size: 4rem;
   font-weight: 550;
-  color: white;
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1), rgba(200, 200, 200, 0.6), rgba(150, 150, 150, 0.3));
+  background-size: 160%; /* Make ts larger to move more to the right */
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradient-pulse 8s infinite ease-in-out;
   text-align: center;
+}
+
+
+@keyframes gradient-pulse {
+  0% {
+    filter: brightness(0.5);
+  }
+  50% {
+    filter: brightness(1.5);
+  }
+  100% {
+    filter: brightness(0.5);
+  }
 }
 
 .hero-description {
@@ -121,11 +137,6 @@
 .hero-btn-primary:hover {
   background: #7c3aed;
   transform: translateY(-2px);
-}
-
-/* Remove the old hero-image styles since we're going with centered layout */
-.hero-image {
-  display: none;
 }
 
 /* Mobile Styles */

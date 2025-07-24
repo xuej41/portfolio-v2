@@ -27,10 +27,9 @@ const Stats = () => {
   const animationRef = useRef(null)
 
   // Triple the skills for seamless infinite scroll in both directions
-  const duplicatedSkills = [...skills, ...skills, ...skills]
+  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills, ...skills]
 
   // Initial offset to start from the middle set of skills
-  // This ensures there are always skills visible to the left
   const initialOffset = -(skills.length * 120) // Start from the second set
 
   // Handle continuous animation
@@ -60,10 +59,10 @@ const Stats = () => {
 
     setIsTransitioning(true)
     setManualOffset((prev) => {
-      const newOffset = prev + 120 // Move right by one skill
+      const newOffset = prev + 240 // Move right by one skill
       // If we've moved too far right, reset to maintain infinite scroll
-      const maxOffset = skills.length * 120 // Maximum right offset
-      return newOffset >= maxOffset ? newOffset - skills.length * 120 : newOffset
+      const maxOffset = skills.length * 240 // Maximum right offset
+      return newOffset >= maxOffset ? newOffset - skills.length * 240 : newOffset
     })
 
     // Reset transition state after animation completes
@@ -77,10 +76,10 @@ const Stats = () => {
 
     setIsTransitioning(true)
     setManualOffset((prev) => {
-      const newOffset = prev - 120 // Move left by one skill
+      const newOffset = prev - 240 // Move left by one skill
       // If we've moved too far left, reset to maintain infinite scroll
-      const minOffset = -(skills.length * 120) // Minimum left offset
-      return newOffset <= minOffset ? newOffset + skills.length * 120 : newOffset
+      const minOffset = -(skills.length * 240) // Minimum left offset
+      return newOffset <= minOffset ? newOffset + skills.length * 240 : newOffset
     })
 
     // Reset transition state after animation completes

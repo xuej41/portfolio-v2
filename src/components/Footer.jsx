@@ -42,7 +42,7 @@ const Footer = () => {
 
           <div className="footer-center">
             <nav className="footer-nav">
-              <a href="https://github.com/xuej41/portfolio-v2" className="footer-link">
+              <a href="https://github.com/xuej41/portfolio-v2" target="_blank" className="footer-link">
                 Designed & Built by Josh X.
               </a>
             </nav>
