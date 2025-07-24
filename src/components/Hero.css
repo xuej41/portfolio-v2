@@ -1,6 +1,10 @@
 .hero {
   /* padding: 120px 0 80px; */
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
+  background-image: url(/src/assets/me6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* makes the image stay in place while you scroll */
   min-height: 100vh;
   /* width: 100vw; Use 99vw to avoid horizontal scrollbar Find a way to fix this in future */
   /* overflow-x: hidden; Not working */
@@ -9,7 +13,20 @@
   align-items: center;
 }
 
- .hero-container {
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is above the background */
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2; /* Ensure the content is above the overlay */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;

@@ -1,21 +1,7 @@
 import "./About.css"
+import Stats from "../components/Stats"
 
 const About = () => {
-  const skills = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "TypeScript",
-    "Python",
-    "MongoDB",
-    "PostgreSQL",
-    "AWS",
-    "Docker",
-    "Git",
-    "HTML/CSS",
-    "Express.js",
-  ]
-
   return (
     <div className="about">
       <div className="about-container">
@@ -61,17 +47,10 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <div className="skills-section">
-          <h2>Technical Skills</h2>
-          <div className="skills-grid">
-            {skills.map((skill, index) => (
-              <div key={index} className="skill-tag">
-                {skill}
-              </div>
-            ))}
-          </div>
-        </div>
+      </div>
+      <div className="skills-section">
+        <h2>Technical Skills</h2>
+        <Stats />
       </div>
     </div>
   )

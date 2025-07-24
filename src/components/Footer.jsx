@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-center">
-            <nav className="footer-nav">
+            <nav className="footer-github">
               <a href="https://github.com/xuej41/portfolio-v2" target="_blank" className="footer-link">
                 Designed & Built by Josh X.
               </a>

@@ -51,12 +51,9 @@ const Navbar = () => {
         </div>
 
         <div className="nav-actions">
-          <Link to="/contact" className="nav-link">
-            Get In Touch
-          </Link>
-          <Link to="/projects" className="btn btn-primary nav-cta">
-            View Work
-          </Link>
+          <a href="https://joshx.tech/resume.pdf" target="_blank" className="btn btn-primary nav-cta">
+            View my Resume
+          </a>
         </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>
