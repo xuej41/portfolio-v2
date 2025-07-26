@@ -13,8 +13,8 @@ const Projects = () => {
         "Admin dashboard with analytics",
         "Mobile-responsive design",
       ],
-      image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      image: "/placeholder.svg",
+      technologies: "Technologies used: React, Next.js, Node.js, Express, MongoDB",
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -25,7 +25,7 @@ const Projects = () => {
         "Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking.",
       features: ["Real-time collaboration", "Drag & drop interface", "Progress tracking"],
       image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
+      technologies: "Technologies used: React, Socket.io, Express, PostgreSQL",
       liveUrl: "#",
       githubUrl: "#",
       reverse: true,
@@ -40,7 +40,7 @@ const Projects = () => {
         "Online status indicators",
       ],
       image: "/placeholder.svg?height=300&width=400",
-      technologies: ["React", "WebSocket", "Node.js", "MongoDB"],
+      technologies: "Technologies used: React, WebSocket, Node.js, MongoDB",
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -136,11 +136,7 @@ const Projects = () => {
                     ))}
                   </ul>
                   <div className="featured-project-technologies">
-                    {project.technologies.map((tech, index) => (
-                      <span key={index} className="featured-tech-tag">
-                        {tech}
-                      </span>
-                    ))}
+                    {project.technologies}
                   </div>
                   <div className="featured-project-links">
                     <a
