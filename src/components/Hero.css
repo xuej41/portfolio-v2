@@ -1,14 +1,10 @@
 .hero {
-  /* padding: 120px 0 80px; */
-  /* background: #1a1a1a; */
+  padding: 120px 0 80px;
   background-image: url(/src/assets/me6.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed; /* makes the image stay in place while you scroll */
   min-height: 100vh;
-  /* width: 100vw; Use 99vw to avoid horizontal scrollbar Find a way to fix this in future */
-  /* overflow-x: hidden; Not working */
-  /* max-width: 100%; */
   display: flex;
   align-items: center;
 }
@@ -112,6 +108,29 @@
   margin-bottom: 40px;
   line-height: 1.6;
   max-width: 600px;
+  min-height: 1.6em; /* Prevents layout shift during typing */
+}
+
+.typewriter-text {
+  color: #8b5cf6;
+  font-weight: 600;
+}
+
+.typewriter-cursor {
+  color: #8b5cf6;
+  font-weight: 400;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-buttons {
