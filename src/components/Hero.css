@@ -145,7 +145,6 @@
   color: #ccc;
   border: 1px solid #444;
   padding: 14px 28px;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -163,7 +162,6 @@
   color: white;
   border: none;
   padding: 14px 28px;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -172,7 +170,6 @@
 
 .hero-btn-primary:hover {
   background: #7c3aed;
-  transform: translateY(-2px);
 }
 
 /* Mobile Styles */
