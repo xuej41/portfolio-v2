@@ -16,7 +16,7 @@ const AdditionalProjectCard = ({
   return (
     <div
       ref={projectRef}
-      className={`project-card hover-border scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
+      className={`project-card scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
       <div className="project-image">
         <img src={imageSrc || "/placeholder.svg"} alt={title} />

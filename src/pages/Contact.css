@@ -51,7 +51,7 @@
   justify-content: center; /* Center content vertically */
   padding: 30px; /* Increased padding for larger squarer look */
   background: #2a2a2a;
-  /* border: 2px solid #444; Redundant due to hover-border */
+  border: 2px solid #444;
   border-radius: 12px;
   transition: all 0.3s ease;
   text-decoration: none; /* Remove underline for links */
@@ -61,7 +61,7 @@
 }
 
 .contact-item:hover {
-  /* border: 2px solid #bbb; Redundant due to hover-border */
+  border: 2px solid #bbb;
   background: #667eea80;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
 }

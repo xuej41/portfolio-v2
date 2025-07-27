@@ -8,17 +8,10 @@ const CTA = () => {
   return (
     <section className="cta">
       <div className="cta-container">
-        <div ref={ctaRef} className={`cta-content scroll-animate ${ctaVisible ? "visible" : ""}`}>
+        <Link to="/contact" ref={ctaRef} className={`cta-content scroll-animate ${ctaVisible ? "visible" : ""}`}>
           <h2 className="cta-title">Let's Connect.</h2>
-          <p className="cta-description">
-            Let's collaborate and bring your ideas to life.
-          </p>
-          <div className="cta-buttons">
-            <Link to="/contact" className="btn btn-primary">
-              Contact btn
-            </Link>
-          </div>
-        </div>
+          <p className="cta-description">Click here to get in touch and chat about cool stuff.</p>
+        </Link>
       </div>
     </section>
   )
