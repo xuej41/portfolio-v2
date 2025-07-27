@@ -23,7 +23,7 @@ const Projects = () => {
 >
           {/* <h2 className="section-title">Featured Projects</h2> Kinda don't need to say Featured Projects since this is the only section */} 
           <div className="featured-projects-grid">
-            {/* Project 1 - E-Commerce Platform */}
+            {/* Project 1 */}
             <FeaturedProjectCard
               title="National Bidders of Canada E-Commerce Platform"
               description="Full-stack e-commerce solution built with Next, React, and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard for comprehensive store management."
@@ -40,7 +40,7 @@ const Projects = () => {
               animationDelay={0}
             />
 
-            {/* Project 2 - Task Management App */}
+            {/* Project 2 */}
             <FeaturedProjectCard
               title="Git Tissues Task Management App"
               description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
@@ -53,7 +53,7 @@ const Projects = () => {
               animationDelay={1}
             />
 
-            {/* Project 3 - Real-Time Chat Application */}
+            {/* Project 3 */}
             <FeaturedProjectCard
               title="PlanetPal Real-Time Waste Management Assistant"
               description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
@@ -78,9 +78,9 @@ const Projects = () => {
         >
           <h2 className="section-title">More Projects</h2>
           <div className="projects-grid">
-            {/* Project 4 - Weather Dashboard */}
+            {/* Project 4 */}
             <AdditionalProjectCard
-              title="Weather Dashboard"
+              title="Other Hackathon Project"
               description="Interactive weather dashboard with location-based forecasts, historical data visualization, and responsive design."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "Chart.js", "Weather API", "CSS3"]}
@@ -89,60 +89,72 @@ const Projects = () => {
               animationDelay={0}
             />
 
-            {/* Project 5 - Social Media Analytics */}
+            {/* Project 5 */}
             <AdditionalProjectCard
-              title="Social Media Analytics"
+              title="Chroot Arch Linux using Live USB"
               description="Analytics dashboard for social media metrics with data visualization, reporting features, and automated insights."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "D3.js", "Python", "FastAPI"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={1}
+              animationDelay={2}
             />
 
-            {/* Project 6 - Recipe Sharing Platform */}
+            {/* Project 6 */}
             <AdditionalProjectCard
-              title="Recipe Sharing Platform"
+              title="Other Hackathon Project"
               description="Community-driven recipe sharing platform with user profiles, recipe ratings, and advanced search functionality."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "Firebase", "Algolia", "Tailwind"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={2}
+              animationDelay={1}
             />
 
-            {/* Project 7 - Portfolio Website */}
+            {/* Project 7 */}
             <AdditionalProjectCard
-              title="Portfolio Website"
+              title="Cry of Fear on Arch Linux"
               description="Responsive portfolio website built with modern web technologies, featuring smooth animations and optimized performance."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "Vite", "CSS3", "React Router"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={3}
+              animationDelay={4}
             />
 
-            {/* Project 8 - Expense Tracker */}
+            {/* Project 8 */}
             <AdditionalProjectCard
-              title="Expense Tracker"
+              title="Portfolio Website"
               description="Personal finance management application with budget tracking, expense categorization, and financial insights."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "Chart.js", "LocalStorage", "CSS3"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={4}
+              animationDelay={2}
             />
 
-            {/* Project 9 - Blog Platform */}
+            {/* Project 9 */}
             <AdditionalProjectCard
-              title="Blog Platform"
+              title="Legacy Portfolio Website"
               description="Full-featured blogging platform with markdown support, user authentication, and content management system."
               imageSrc="/placeholder.svg?height=200&width=300"
               technologies={["React", "Node.js", "MongoDB", "Markdown"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={5}
+              animationDelay={3}
             />
+
+            {/* Project 10 */}
+            <AdditionalProjectCard
+              title="Recipe Sharing Platform"
+              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
+              imageSrc="/placeholder.svg?height=200&width=300"
+              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
+              liveUrl="#"
+              githubUrl="#"
+              animationDelay={3}
+            />
+
           </div>
         </div>
       </div>

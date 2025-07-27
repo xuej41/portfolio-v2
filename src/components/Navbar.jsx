@@ -5,10 +5,10 @@ import { Link, useLocation } from "react-router-dom"
 import "./Navbar.css"
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false) // For mobile
   const location = useLocation()
 
-  const toggleMenu = () => {
+  const toggleMenu = () => { 
     setIsMenuOpen(!isMenuOpen)
   }
 
@@ -16,39 +16,51 @@ const Navbar = () => {
     return location.pathname === path
   }
 
+  const handleLinkClick = (path) => {
+    if (location.pathname === path) {
+      // Scroll to the top if already on the same route
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <Link to="/" className="nav-logo">
-          <span className="logo-text">Portfolio</span>
+        <Link to="/" className="nav-logo" onClick={() => handleLinkClick("/")}>
+          <span className="logo-text">Josh.</span>
         </Link>
 
         <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-          <Link to="/" className={`nav-link ${isActive("/") ? "active" : ""}`} onClick={() => setIsMenuOpen(false)}>
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className={`nav-link ${isActive("/about") ? "active" : ""}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="/projects"
-            className={`nav-link ${isActive("/projects") ? "active" : ""}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Projects
-          </Link>
-          <Link
-            to="/contact"
-            className={`nav-link ${isActive("/contact") ? "active" : ""}`}
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Contact
-          </Link>
-        </div>
+        <Link
+          to="/"
+          className={`nav-link ${isActive("/") ? "active" : ""}`}
+          onClick={() => handleLinkClick("/")}
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className={`nav-link ${isActive("/about") ? "active" : ""}`}
+          onClick={() => handleLinkClick("/about")}
+        >
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className={`nav-link ${isActive("/projects") ? "active" : ""}`}
+          onClick={() => handleLinkClick("/projects")}
+        >
+          Projects
+        </Link>
+        <Link
+          to="/contact"
+          className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+          onClick={() => handleLinkClick("/contact")}
+        >
+          Contact
+        </Link>
+      </div>
 
         <div className="nav-actions">
           <a href="https://joshx.tech/resume.pdf" target="_blank" className="btn btn-primary nav-cta">

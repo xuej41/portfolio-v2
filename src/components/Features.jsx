@@ -67,7 +67,7 @@ const Features = () => {
             features={["Real-time collaboration", "Drag & drop interface", "Progress tracking"]}
             imageSrc="/placeholder.svg?height=300&width=400"
             reverse={true}
-            animationDelay={0}
+            animationDelay={1}
           />
 
           {/* Project 3 */}
@@ -80,7 +80,7 @@ const Features = () => {
             ]}
             imageSrc="/placeholder.svg?height=300&width=400"
             reverse={false}
-            animationDelay={0}
+            animationDelay={2}
           />
         </div>
 
