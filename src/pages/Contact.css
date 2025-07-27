@@ -1,6 +1,6 @@
 .contact {
   padding: 120px 0 80px;
-  background: #fff;
+  background: #333;
   min-height: 100vh;
 }
 
@@ -18,13 +18,13 @@
 .contact-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #333;
+  color: white;
   margin-bottom: 16px;
 }
 
 .contact-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #888;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -33,58 +33,83 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-info {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 30px;
+  grid-template-columns: 1fr 1fr; /* Two columns for the top row */
+  gap: 30px; /* Gap between grid items */
 }
 
 .contact-item {
   display: flex;
+  flex-direction: column; /* Stack icon above text */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 30px; /* Increased padding for larger squarer look */
+  background: #2a2a2a;
+  border: 2px solid #444;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline for links */
+  color: inherit; /* Inherit text color */
+  height: 100%; /* Make item fill its grid cell height */
+  min-height: 180px; /* Ensure a minimum square-like height */
+}
+
+.contact-item:hover {
+  border: 2px solid #bbb;
+  background: #667eea80;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+  transform: translateY(-2px); /* Slight downward movement on hover */
+}
+
+.contact-item-full-width {
+  grid-column: 1 / span 2; /* Make this item span both columns */
+}
+
+.contact-icon {
+  font-size: 1.5rem; /* Base size for icon */
+  width: 60px; /* Larger icon */
+  height: 60px;
+  display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background: #f8f9fa;
+  justify-content: center;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); Doesn't really look good */
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 15px; /* Space between icon and text */
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.contact-details p {
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  background: #2a2a2a;
+  padding: 40px;
+  border: 2px solid #444;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
 
-.contact-item:hover {
-  background: #f0f0f0;
-  transform: translateY(-2px);
-}
-
-.contact-icon {
-  font-size: 1.5rem;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 50%;
-  color: white;
-}
-
-.contact-details h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 4px;
-}
-
-.contact-details p {
-  color: #666;
-  font-size: 0.95rem;
-}
-
-.contact-form {
-  background: #f8f9fa;
-  padding: 40px;
-  border-radius: 12px;
+.contact-form:hover {
+  border: 2px solid #bbb;
 }
 
 .form-group {
@@ -95,7 +120,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
-  color: #333;
+  color: white;
 }
 
 .form-group input,
@@ -141,18 +166,28 @@
     gap: 40px;
   }
 
+  .contact-info {
+    grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    gap: 20px;
+  }
+
+  .contact-item-full-width {
+    grid-column: auto; /* Remove spanning on mobile */
+  }
+
   .contact-form {
     padding: 30px;
   }
 
   .contact-item {
-    padding: 15px;
+    padding: 20px;
+    min-height: unset; /* Remove min height for smaller screens */
   }
 
   .contact-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
   }
 }
 
