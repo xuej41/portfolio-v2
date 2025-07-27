@@ -8,7 +8,7 @@ const ProjectCard = ({ title, description, features, imageSrc, reverse = false, 
   return (
     <div
       ref={projectRef}
-      className={`feature-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
+      className={`feature-project-card hover-border ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
       <div className="feature-project-content">
         <h3 className="feature-project-title">{title}</h3>

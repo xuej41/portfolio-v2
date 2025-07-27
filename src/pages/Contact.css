@@ -51,7 +51,7 @@
   justify-content: center; /* Center content vertically */
   padding: 30px; /* Increased padding for larger squarer look */
   background: #2a2a2a;
-  border: 2px solid #444;
+  /* border: 2px solid #444; Redundant due to hover-border */
   border-radius: 12px;
   transition: all 0.3s ease;
   text-decoration: none; /* Remove underline for links */
@@ -61,10 +61,9 @@
 }
 
 .contact-item:hover {
-  border: 2px solid #bbb;
+  /* border: 2px solid #bbb; Redundant due to hover-border */
   background: #667eea80;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
-  transform: translateY(-2px); /* Slight downward movement on hover */
 }
 
 .contact-item-full-width {

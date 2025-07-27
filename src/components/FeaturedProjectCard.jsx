@@ -18,7 +18,7 @@ const FeaturedProjectCard = ({
   return (
     <div
       ref={projectRef}
-      className={`featured-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
+      className={`featured-project-card hover-border ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
       <div className="featured-project-content">
         <h3 className="featured-project-title">{title}</h3>

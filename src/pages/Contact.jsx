@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <a
-            ref={contactRef} className={`contact-item scroll-animate scroll-animate-delay-0 ${contactVisible ? "visible" : ""}`}
+            ref={contactRef} className={`contact-item hover-border scroll-animate scroll-animate-delay-0 ${contactVisible ? "visible" : ""}`}
             href="https://github.com/xuej41"
             target="_blank"
             rel="noopener noreferrer"
@@ -63,7 +63,7 @@ const Contact = () => {
               </div>
             </a>
             <a
-            ref={contactRef} className={`contact-item scroll-animate scroll-animate-delay-1 ${contactVisible ? "visible" : ""}`}
+            ref={contactRef} className={`contact-item hover-border scroll-animate scroll-animate-delay-1 ${contactVisible ? "visible" : ""}`}
             href="mailto:xuej41@mcmaster.ca"
             >
               <div className="contact-icon">
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
             </a>
             <a
-            ref={contactRef} className={`contact-item contact-item-full-width scroll-animate scroll-animate-delay-2 ${contactVisible ? "visible" : ""}`}
+            ref={contactRef} className={`contact-item contact-item-full-width hover-border scroll-animate scroll-animate-delay-2 ${contactVisible ? "visible" : ""}`}
             href="https://linkedin.com/in/joshuaxue"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const Contact = () => {
             </a>
           </div>
 
-          <form ref={contactRef} className={`contact-form scroll-animate scroll-animate-delay-4 ${contactVisible ? "visible" : ""}`} onSubmit={handleSubmit}>
+          <form ref={contactRef} className={`contact-form hover-border scroll-animate scroll-animate-delay-4 ${contactVisible ? "visible" : ""}`} onSubmit={handleSubmit}>
             <p>Send me a direct message</p>
             <div className="form-group">
               <label htmlFor="name">Name</label>
