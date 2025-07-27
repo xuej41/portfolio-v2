@@ -4,7 +4,6 @@ import AdditionalProjectCard from "../components/AdditionalProjectCard"
 import "./Projects.css"
 
 const Projects = () => {
-  const [headerRef, headerVisible] = useScrollAnimation()
   const [featuredSectionRef, featuredSectionVisible] = useScrollAnimation()
   const [additionalSectionRef, additionalSectionVisible] = useScrollAnimation()
 
@@ -97,7 +96,7 @@ const Projects = () => {
               technologies={["React", "D3.js", "Python", "FastAPI"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={2}
+              animationDelay={4}
             />
 
             {/* Project 6 */}
@@ -108,7 +107,7 @@ const Projects = () => {
               technologies={["React", "Firebase", "Algolia", "Tailwind"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={1}
+              animationDelay={2}
             />
 
             {/* Project 7 */}
@@ -130,7 +129,7 @@ const Projects = () => {
               technologies={["React", "Chart.js", "LocalStorage", "CSS3"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={2}
+              animationDelay={0}
             />
 
             {/* Project 9 */}
@@ -152,7 +151,7 @@ const Projects = () => {
               technologies={["React", "Node.js", "MongoDB", "Markdown"]}
               liveUrl="#"
               githubUrl="#"
-              animationDelay={3}
+              animationDelay={1}
             />
 
           </div>

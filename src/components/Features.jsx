@@ -32,9 +32,6 @@ const ProjectCard = ({ title, description, features, imageSrc, reverse = false, 
 }
 
 const Features = () => {
-  const [headerRef, headerVisible] = useScrollAnimation()
-  const [ctaRef, ctaVisible] = useScrollAnimation()
-
   return (
     <section className="features">
       <div className="features-container">
