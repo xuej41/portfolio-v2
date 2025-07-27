@@ -1,6 +1,6 @@
 "use client"
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -10,17 +10,21 @@ import Footer from "./components/Footer"
 import "./App.css"
 import { useEffect } from "react"
 
+// Scroll to top on route change thing
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname]) // Rerun effect when pathname changes
+
+  return null
+}
 
 function App() {
-  useEffect(() => {
-    // Disable scroll restoration site-wide
-    if (window.history.scrollRestoration) {
-      window.history.scrollRestoration = "manual"
-    }
-  }, []) // Run once on mount
-
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <Routes>
