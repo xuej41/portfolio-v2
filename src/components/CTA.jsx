@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom"
+import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./CTA.css"
 
 const CTA = () => {
+  const [ctaRef, ctaVisible] = useScrollAnimation()
+
   return (
     <section className="cta">
       <div className="cta-container">
-        <div className="cta-content">
-          <h2 className="cta-title">Call to Action</h2>
+        <div ref={ctaRef} className={`cta-content scroll-animate ${ctaVisible ? "visible" : ""}`}>
+          <h2 className="cta-title">Let's Connect.</h2>
           <p className="cta-description">
             Let's collaborate and bring your ideas to life.
           </p>
@@ -14,9 +17,6 @@ const CTA = () => {
             <Link to="/contact" className="btn btn-primary">
               Contact btn
             </Link>
-            <a href="https://www.joshx.tech/resume.pdf" target="_blank" className="btn btn-outline">
-              View my Resume
-            </a>
           </div>
         </div>
       </div>

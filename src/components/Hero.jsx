@@ -67,7 +67,7 @@ const Hero = () => {
               <div className="hero-avatar"></div>
               <div className="hero-avatar"></div>
             </div>
-            Greetings huzz
+            Welcome
           </div>
 
           <h1 className="hero-title">Hi, I'm Josh.</h1>
