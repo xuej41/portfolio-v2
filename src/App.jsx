@@ -1,3 +1,5 @@
+"use client"
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
@@ -6,9 +8,17 @@ import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Footer from "./components/Footer"
 import "./App.css"
+import { useEffect } from "react"
 
 
 function App() {
+  useEffect(() => {
+    // Disable scroll restoration site-wide
+    if (window.history.scrollRestoration) {
+      window.history.scrollRestoration = "manual"
+    }
+  }, []) // Run once on mount
+
   return (
     <Router>
       <div className="App">
