@@ -39,10 +39,9 @@ const Features = () => {
     <section className="features">
       <div className="features-container">
         <div className="features-header">
-          <h2 className="features-title">Projects</h2>
+          <h2 className="features-title">Featured Projects</h2>
           <p className="features-description">
-            Showcase of recent work demonstrating technical expertise and creative problem-solving across various
-            domains and technologies.
+            Showcase of recent work and technical expertise.
           </p>
         </div>
 

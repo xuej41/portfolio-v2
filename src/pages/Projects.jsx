@@ -11,9 +11,9 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects-container">
-        <div ref={headerRef} className={`projects-header scroll-animate ${headerVisible ? "visible" : ""}`}>
+        <div className="projects-header">
           <h1 className="projects-title">My Projects</h1>
-          <p className="projects-subtitle">A showcase of my recent work and technical expertise</p>
+          <p className="projects-subtitle">A showcase of all my work and technical expertise.</p>
         </div>
 
         {/* Featured Projects Section */}
@@ -21,7 +21,7 @@ const Projects = () => {
           ref={featuredSectionRef}
           className={`featured-projects-section scroll-animate ${featuredSectionVisible ? "visible" : ""}`}
 >
-          <h2 className="section-title">Featured Projects</h2>
+          {/* <h2 className="section-title">Featured Projects</h2> Kinda don't need to say Featured Projects since this is the only section */} 
           <div className="featured-projects-grid">
             {/* Project 1 - E-Commerce Platform */}
             <FeaturedProjectCard
