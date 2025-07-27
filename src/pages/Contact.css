@@ -112,6 +112,12 @@
   border: 2px solid #bbb;
 }
 
+.contact-form p{
+  color: #888;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
 .form-group {
   margin-bottom: 20px;
 }

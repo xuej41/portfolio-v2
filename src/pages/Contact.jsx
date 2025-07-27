@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
               <div className="contact-details">
                 <h3>Email</h3>
-                <p>Send me a direct message</p>
+                <p>Send me an email with your thoughts</p>
               </div>
             </a>
             <a
@@ -95,6 +95,7 @@ const Contact = () => {
           </div>
 
           <form ref={contactRef} className={`contact-form scroll-animate scroll-animate-delay-4 ${contactVisible ? "visible" : ""}`} onSubmit={handleSubmit}>
+            <p>Send me a direct message</p>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
