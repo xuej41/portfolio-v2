@@ -4,6 +4,8 @@ Second iteration of my personal portfolio website. Work in progress.
 
 Visit my current portfolio website at [joshx.tech](https://joshx.tech/)!
 
+React boostrapped with Vite for the frontend
+
 <!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

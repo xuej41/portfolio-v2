@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
 
         <div className="nav-actions">
-          <a href="https://joshx.tech/resume.pdf" target="_blank" className="btn btn-primary nav-cta">
+          <a href="/files/resume.pdf" target="_blank" className="btn btn-primary nav-cta" rel="noopener noreferrer">
             View my Resume
           </a>
         </div>
