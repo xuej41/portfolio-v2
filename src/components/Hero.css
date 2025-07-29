@@ -133,13 +133,6 @@
   }
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .hero-btn-secondary {
   background: transparent;
   color: #ccc;

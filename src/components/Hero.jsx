@@ -79,15 +79,6 @@ const Hero = () => {
             <span className="typewriter-cursor">|</span>
               </span>
           </p>
-
-          <div className="hero-buttons">
-            <Link to="/contact" className="hero-btn-secondary">
-              Contact btn
-            </Link>
-            <Link to="/projects" className="hero-btn-primary">
-              Projects btn
-            </Link>
-          </div>
         </div>
       </div>
     </section>

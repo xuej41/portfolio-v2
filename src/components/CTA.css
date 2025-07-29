@@ -14,7 +14,7 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradient background */
   padding: 60px 40px;
   border-radius: 16px;
-  border: 2px solid transparent; /* Initial transparent border */
+  border: 2px solid transparent;
   color: white; /* Text color */
   text-decoration: none; /* Remove underline from link */
   display: block; /* Make the link fill the container */
@@ -24,7 +24,7 @@
 
 .cta-content:hover {
   background: linear-gradient(135deg, #5a67d8 0%, #6a3e92 100%); /* Darker gradient on hover */
-  border-color: white; /* White border on hover */
+  border: 2px solid white; /* White border on hover */
   transform: translateY(-5px); /* Lift effect on hover not working */
   box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6); /* Larger shadow on hover */
 }
