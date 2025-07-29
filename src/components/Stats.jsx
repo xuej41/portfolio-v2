@@ -5,20 +5,20 @@ import "./Stats.css"
 
 const Stats = () => {
   const skills = [
-    { name: "Git", image: "/src/assets/skills/git.svg?height=60&width=60" },
-    { name: "Python", image: "/src/assets/skills/python.svg?height=60&width=60" },
-    { name: "C/C++", image: "/src/assets/skills/cpp.svg?height=60&width=60" },
-    { name: "Arduino", image: "/src/assets/skills/arduino.svg?height=60&width=60" },
-    { name: "Linux", image: "/src/assets/skills/linux.svg?height=60&width=60" },
-    { name: "Docker", image: "/src/assets/skills/docker.svg?height=60&width=60" },
-    { name: "SQL", image: "/src/assets/skills/sql.svg?height=60&width=60" },
-    { name: "HTML", image: "/src/assets/skills/html5.png?height=60&width=60" },
-    { name: "CSS", image: "/src/assets/skills/css3.png?height=60&width=60" },
-    { name: "JavaScript", image: "/src/assets/skills/js.svg?height=60&width=60" },
-    { name: "React", image: "/src/assets/skills/react.svg?height=60&width=60" },
-    { name: "Vite", image: "/src/assets/skills/vite.svg?height=50&width=50" },
-    { name: "Next.js", image: "/src/assets/skills/nextjs.svg?height=60&width=60" },
-    { name: "Node.js", image: "/src/assets/skills/nodejs.svg?height=60&width=60" },
+    { name: "Git", image: "/skills/git.svg?height=60&width=60" },
+    { name: "Python", image: "/skills/python.svg?height=60&width=60" },
+    { name: "C/C++", image: "/skills/cpp.svg?height=60&width=60" },
+    { name: "Arduino", image: "/skills/arduino.svg?height=60&width=60" },
+    { name: "Linux", image: "/skills/linux.svg?height=60&width=60" },
+    { name: "Docker", image: "/skills/docker.svg?height=60&width=60" },
+    { name: "SQL", image: "/skills/sql.svg?height=60&width=60" },
+    { name: "HTML", image: "/skills/html5.png?height=60&width=60" },
+    { name: "CSS", image: "/skills/css3.png?height=60&width=60" },
+    { name: "JavaScript", image: "/skills/js.svg?height=60&width=60" },
+    { name: "React", image: "/skills/react.svg?height=60&width=60" },
+    { name: "Vite", image: "/skills/vite.svg?height=50&width=50" },
+    { name: "Next.js", image: "/skills/nextjs.svg?height=60&width=60" },
+    { name: "Node.js", image: "/skills/nodejs.svg?height=60&width=60" },
   ]
 
   const [isPaused, setIsPaused] = useState(false)
@@ -119,6 +119,7 @@ const Stats = () => {
           >
             {duplicatedSkills.map((skill, index) => (
               <div key={index} className="skill-item">
+                {/* What tha hell this is */}
                 <img src={skill.image || "/src/assets/skills/js.svg"} alt={skill.name} className="skill-image" />
                 <span className="skill-name">{skill.name}</span>
               </div>
