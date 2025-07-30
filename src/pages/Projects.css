@@ -104,6 +104,7 @@
 .featured-project-links {
   display: flex;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .featured-project-link {
@@ -127,6 +128,13 @@
   align-items: center;
 }
 
+.featured-project-image-link {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  text-decoration: none;
+}
+
 .featured-project-image {
   width: 100%;
   /* max-width: 400px; */
@@ -134,6 +142,12 @@
   overflow: hidden;
   /* border: 1px solid #e0e0e0; */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-project-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .featured-project-image img {

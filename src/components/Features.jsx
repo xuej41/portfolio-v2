@@ -2,13 +2,14 @@ import { Link } from "react-router-dom"
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./Features.css"
 
-const ProjectCard = ({ title, description, features, imageSrc, reverse = false, animationDelay = 0 }) => {
+const ProjectCard = ({ title, description, features, imageSrc, projectId, reverse = false, animationDelay = 0 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
 
   return (
-    <div
+    <Link
+      to={`/projects/${projectId}`}
       ref={projectRef}
-      className={`feature-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
+      className={`feature-project-card-link ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
       <div className="feature-project-content">
         <h3 className="feature-project-title">{title}</h3>
@@ -27,7 +28,7 @@ const ProjectCard = ({ title, description, features, imageSrc, reverse = false, 
           <img src={imageSrc || "/placeholder.svg"} alt={title} />
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
@@ -53,6 +54,7 @@ const Features = () => {
               "Mobile-responsive design",
             ]}
             imageSrc="/placeholder.svg?height=300&width=400"
+            projectId="ecommerce-platform"
             reverse={false}
             animationDelay={0}
           />
@@ -63,6 +65,7 @@ const Features = () => {
             description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
             features={["Real-time collaboration", "Drag & drop interface", "Progress tracking"]}
             imageSrc="/placeholder.svg?height=300&width=400"
+            projectId="task-management"
             reverse={true}
             animationDelay={1}
           />
@@ -76,6 +79,7 @@ const Features = () => {
               "Online status indicators",
             ]}
             imageSrc="/placeholder.svg?height=300&width=400"
+            projectId="chat-application"
             reverse={false}
             animationDelay={2}
           />

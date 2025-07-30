@@ -35,6 +35,7 @@ const Projects = () => {
               technologies={["React", "Node.js", "MongoDB", "Stripe"]}
               liveUrl="#"
               githubUrl="#"
+              projectId="ecommerce-platform"
               reverse={false}
               animationDelay={0}
             />
@@ -48,6 +49,7 @@ const Projects = () => {
               technologies={["React", "Socket.io", "Express", "PostgreSQL"]}
               liveUrl="#"
               githubUrl="#"
+              projectId="task-management"
               reverse={true}
               animationDelay={1}
             />
@@ -64,6 +66,7 @@ const Projects = () => {
               technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
               liveUrl="#"
               githubUrl="#"
+              projectId="chat-application"
               reverse={false}
               animationDelay={2}
             />

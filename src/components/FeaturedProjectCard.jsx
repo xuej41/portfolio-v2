@@ -1,4 +1,5 @@
 "use client"
+import { Link } from "react-router-dom"
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./../pages/Projects.css" // Import Projects.css for styling
 
@@ -10,15 +11,23 @@ const FeaturedProjectCard = ({
   technologies,
   liveUrl,
   githubUrl,
+  projectId, // Add projectId prop
   reverse = false,
   animationDelay = 0,
 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
 
+  const handleExternalLinkClick = (e, url) => {
+    e.preventDefault()
+    e.stopPropagation()
+    window.open(url, "_blank", "noopener,noreferrer")
+  }
+
   return (
-    <div
+    <Link
+      to={`/projects/${projectId}`}
       ref={projectRef}
-      className={`featured-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
+      className={`featured-project-card-link ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
       <div className="featured-project-content">
         <h3 className="featured-project-title">{title}</h3>
@@ -39,12 +48,13 @@ const FeaturedProjectCard = ({
           ))}
         </div>
         <div className="featured-project-links">
-          <a href={liveUrl} className="featured-project-link" target="_blank" rel="noopener noreferrer">
+          <span className="featured-project-link-text">View Details</span>
+          <button className="featured-project-link-external" onClick={(e) => handleExternalLinkClick(e, liveUrl)}>
             Live Demo
-          </a>
-          <a href={githubUrl} className="featured-project-link" target="_blank" rel="noopener noreferrer">
+          </button>
+          <button className="featured-project-link-external" onClick={(e) => handleExternalLinkClick(e, githubUrl)}>
             GitHub
-          </a>
+          </button>
         </div>
       </div>
       <div className="featured-project-visual">
@@ -52,7 +62,7 @@ const FeaturedProjectCard = ({
           <img src={imageSrc || "/placeholder.svg"} alt={title} />
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
