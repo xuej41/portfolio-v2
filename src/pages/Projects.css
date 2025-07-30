@@ -24,6 +24,7 @@
   padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  text-decoration: none;
   gap: 40px;
   align-items: center;
   transition: all 0.3s ease; /* This is redundant not sure why, overwritten by .scroll-animate transition in App.css */

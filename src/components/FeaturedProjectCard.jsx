@@ -1,4 +1,5 @@
 "use client"
+import { Link } from "react-router-dom"
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./../pages/Projects.css" // Import Projects.css for styling
 
@@ -10,13 +11,15 @@ const FeaturedProjectCard = ({
   technologies,
   liveUrl,
   githubUrl,
+  projectId,
   reverse = false,
   animationDelay = 0,
 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
 
   return (
-    <div
+    <Link
+      to={`/projects/${projectId}`}
       ref={projectRef}
       className={`featured-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
@@ -52,7 +55,7 @@ const FeaturedProjectCard = ({
           <img src={imageSrc || "/placeholder.svg"} alt={title} />
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
