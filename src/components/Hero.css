@@ -170,6 +170,8 @@
   .hero {
     padding: 100px 0 60px;
     min-height: auto;
+    background-attachment: scroll;
+    height: 100vh; /* Make the hero background height good*/
   }
 
   .hero-title {

@@ -16,7 +16,7 @@ export const useScrollAnimation = (options = {}) => {
         }
       },
       {
-        threshold: 0.2, // Trigger when 50% of element is visible
+        threshold: 0.2, // Trigger when 20% of element is visible
         rootMargin: "-50px 0px", // Start animation 50px before element enters viewport
         ...options,
       },

@@ -132,7 +132,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .about {
-    padding: 100px 0 60px;
+    padding: 100px 0 0;
   }
 
   .about-title {
