@@ -23,11 +23,11 @@ const AdditionalProjectCard = ({
         <div className="project-overlay">
           <div className="project-links">
             <a href={liveUrl} className="project-link" target="_blank" rel="noopener noreferrer">
-              Live Demo
+              Learn More
             </a>
-            <a href={githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">
+            {/* <a href={githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">
               GitHub
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

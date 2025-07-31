@@ -96,6 +96,7 @@
   background: #f0f0f0;
   color: #666;
   padding: 6px 12px;
+  margin-right: 5px; /* Temporary fix to make them not touch each other side by side */
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 500;

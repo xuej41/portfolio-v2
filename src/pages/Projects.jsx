@@ -74,8 +74,8 @@ const Projects = () => {
                 "AI Chatbot Assistant",
               ]}
               imageSrc="/featured/nbc2.png"
-              technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL"]}
-              liveUrl="https://github.com/xuej41/nationalbiddersofcanada"
+              technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
+              liveUrl="https://devpost.com/software/national-bidders-of-canada"
               githubUrl="#"
               reverse={true}
               animationDelay={1}
@@ -92,8 +92,8 @@ const Projects = () => {
                 "Easy to use web interface",
               ]}
               imageSrc="/featured/memorylane2.PNG"
-              technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
-              liveUrl="https://github.com/pakmangames/deltahacks11"
+              technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
+              liveUrl="https://devpost.com/software/memory-lane-dhke7c"
               githubUrl="#"
               reverse={false}
               animationDelay={2}
@@ -111,10 +111,10 @@ const Projects = () => {
             {/* Project 4 */}
             <AdditionalProjectCard
               title="Git Tissues Task Management App"
-              description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Socket.io", "Express", "PostgreSQL"]}
-              liveUrl="#"
+              description="ConUHacks hackathon project - Collaborative project management tool to sort Git Issues using AI GitHub profile analysis. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
+              imageSrc="/moreprojects/GitTissues2.png?height=200&width=300"
+              technologies={["Next.js", "Express.js", "GraphQL", "React", "OpenAI", "Postman"]}
+              liveUrl="https://devpost.com/software/git-tissues"
               githubUrl="#"
               animationDelay={0}
             />
@@ -122,10 +122,10 @@ const Projects = () => {
             {/* Project 5 */}
             <AdditionalProjectCard
               title="Chroot Arch Linux using Live USB"
-              description="Analytics dashboard for social media metrics with data visualization, reporting features, and automated insights."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "D3.js", "Python", "FastAPI"]}
-              liveUrl="#"
+              description="YouTube video project - Using Arch's Chroot feature to fix bootloader and package issues through a live usb."
+              imageSrc="/moreprojects/chroot_video.PNG?height=200&width=300"
+              technologies={["Chroot", "SDDM", "Bash", "Grub", "Live USB"]}
+              liveUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
               githubUrl="#"
               animationDelay={4}
             />
@@ -134,9 +134,9 @@ const Projects = () => {
             <AdditionalProjectCard
               title="PlanetPal Waste Management Assistant"
               description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
-              liveUrl="#"
+              imageSrc="/moreprojects/PlanetPal.PNG?height=200&width=300"
+              technologies={["HTML+CSS", "Javascript", "React", "Node.js", "OpenAI"]}
+              liveUrl="https://devpost.com/software/planetpal-thq27l"
               githubUrl="#"
               animationDelay={2}
             />
@@ -144,10 +144,10 @@ const Projects = () => {
             {/* Project 7 */}
             <AdditionalProjectCard
               title="Cry of Fear on Arch Linux"
-              description="Responsive portfolio website built with modern web technologies, featuring smooth animations and optimized performance."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Vite", "CSS3", "React Router"]}
-              liveUrl="#"
+              description="YouTube video project - Running Cry of Fear on Arch Linux through Steam Proton."
+              imageSrc="/moreprojects/cof_video.jpg?height=200&width=300"
+              technologies={["Proton", "Steam", "Linux", "Compositor"]}
+              liveUrl="https://www.youtube.com/watch?v=_ps8ADqXLXI"
               githubUrl="#"
               animationDelay={4}
             />
