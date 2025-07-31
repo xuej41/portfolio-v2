@@ -39,13 +39,13 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about-image">
+          {/* <div className="about-image">
             <div className="profile-card">
               <div className="profile-image">
                 <img src="/placeholder.svg?height=300&width=300" alt="Profile" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="skills-section">

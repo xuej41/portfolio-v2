@@ -124,7 +124,7 @@ const Projects = () => {
               title="Chroot Arch Linux using Live USB"
               description="YouTube video project - Using Arch's Chroot feature to fix bootloader and package issues through a live usb."
               imageSrc="/moreprojects/chroot_video.PNG?height=200&width=300"
-              technologies={["Chroot", "SDDM", "Bash", "Grub", "Live USB"]}
+              technologies={["Bash", "Grub", "Chroot", "SDDM", "Live USB"]}
               liveUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
               githubUrl="#"
               animationDelay={4}
@@ -133,7 +133,7 @@ const Projects = () => {
             {/* Project 6 */}
             <AdditionalProjectCard
               title="PlanetPal Waste Management Assistant"
-              description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
+              description="TerraHacks hackathon project - Personal waste management assistant web app. Instant communication capabilities, built with advanced features for efficiency and engagement."
               imageSrc="/moreprojects/PlanetPal.PNG?height=200&width=300"
               technologies={["HTML+CSS", "Javascript", "React", "Node.js", "OpenAI"]}
               liveUrl="https://devpost.com/software/planetpal-thq27l"
