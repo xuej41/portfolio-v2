@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./Features.css"
 
-const ProjectCard = ({ title, description, features, imageSrc, reverse = false, animationDelay = 0 }) => {
+const ProjectCard = ({ id, title, description, features, imageSrc, reverse = false, animationDelay = 0 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
 
   return (
@@ -21,6 +21,9 @@ const ProjectCard = ({ title, description, features, imageSrc, reverse = false, 
             </li>
           ))}
         </ul>
+        <Link to={`/projects#${id}`} className="btn btn-primary">
+            View Project
+        </Link>
       </div>
       <div className="feature-project-visual">
         <div className="feature-project-image">
@@ -44,38 +47,47 @@ const Features = () => {
 
         <div className="features-grid">
           {/* Project 1 */}
-          <ProjectCard
-            title="National Bidders of Canada E-Commerce Platform"
-            description="Full-stack e-commerce solution built with Next, React, and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard for comprehensive store management."
-            features={[
-              "Real-time bids and inventory tracking",
-              "Admin dashboard with analytics",
-              "Mobile-responsive design",
-            ]}
-            imageSrc="/placeholder.svg?height=300&width=400"
-            reverse={false}
-            animationDelay={0}
-          />
+            <ProjectCard
+              id="sumobot-v2"
+              title="Sumobot V2"
+              description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
+              features={[
+                "Dual ultrasonic sensors + TOF sensor",
+                "Dual IR sensors for line detection",
+                "Arduino Nano + motor driver + DC motors with Steelies",
+              ]}
+              imageSrc="/src/assets/featured/sumobot-v2.jpg?height=300&width=400"
+              reverse={false}
+              animationDelay={0}
+            />
 
           {/* Project 2 */}
           <ProjectCard
-            title="Git Tissues Task Management App"
-            description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
-            features={["Real-time collaboration", "Drag & drop interface", "Progress tracking"]}
-            imageSrc="/placeholder.svg?height=300&width=400"
+            id="national-bidders"
+            title="National Bidders of Canada"
+            description="QHacks hackathon project - Dynamic live auction platform. Live cross-platform bids, list items, user authentication."
+            features={[
+              "Real-time bids and inventory tracking",
+              "Admin dashboard with analytics",
+              "Secure user authentication and payment processing",
+              "AI Chatbot Assistant",
+            ]}
+            imageSrc="/src/assets/featured/nbc2.png"
             reverse={true}
             animationDelay={1}
           />
 
           {/* Project 3 */}
           <ProjectCard
-            title="PlanetPal Real-Time Waste Management Assistant"
-            description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
+            id="memory-lane"
+            title="Memory Lane"
+            description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
             features={[
-              "Instant message delivery",
-              "Online status indicators",
+              "Instant Facial recognition",
+              "Database storage and retrieval",
+              "Easy to use web interface",
             ]}
-            imageSrc="/placeholder.svg?height=300&width=400"
+            imageSrc="/src/assets/featured/memorylane2.PNG"
             reverse={false}
             animationDelay={2}
           />

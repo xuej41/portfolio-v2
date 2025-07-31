@@ -3,6 +3,7 @@ import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./../pages/Projects.css" // Import Projects.css for styling
 
 const FeaturedProjectCard = ({
+  id,
   title,
   description,
   features,
@@ -17,6 +18,7 @@ const FeaturedProjectCard = ({
 
   return (
     <div
+      id={id}
       ref={projectRef}
       className={`featured-project-card ${reverse ? "reverse" : ""} scroll-animate ${animationDelay > 0 ? `scroll-animate-delay-${animationDelay}` : ""} ${projectVisible ? "visible" : ""}`}
     >
@@ -40,11 +42,11 @@ const FeaturedProjectCard = ({
         </div>
         <div className="featured-project-links">
           <a href={liveUrl} className="featured-project-link" target="_blank" rel="noopener noreferrer">
-            Live Demo
+            Learn More
           </a>
-          <a href={githubUrl} className="featured-project-link" target="_blank" rel="noopener noreferrer">
+          {/* <a href={githubUrl} className="featured-project-link" target="_blank" rel="noopener noreferrer">
             GitHub
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="featured-project-visual">

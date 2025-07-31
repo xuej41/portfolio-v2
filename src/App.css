@@ -81,11 +81,13 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #667eea;
   color: white;
+  margin-top: 10px; /* Only here for the featured projects in Home */
 }
 
 .btn-primary:hover {
+  background: #667eea80;
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
@@ -101,6 +103,8 @@ body {
 }
 
 .btn-outline {
+  padding: 15px 75px;
+  font-size: 1.2rem;
   background: transparent;
   color: rgb(170, 170, 170);
   border: 2px solid #007BFF;

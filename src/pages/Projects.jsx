@@ -1,11 +1,33 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import FeaturedProjectCard from "../components/FeaturedProjectCard"
 import AdditionalProjectCard from "../components/AdditionalProjectCard"
 import "./Projects.css"
 
 const Projects = () => {
+  const location = useLocation();
   const [featuredSectionRef, featuredSectionVisible] = useScrollAnimation()
   const [additionalSectionRef, additionalSectionVisible] = useScrollAnimation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1)); // Remove the '#' from the hash
+      if (element) {
+
+        element.scrollIntoView({ behavior: "smooth" }); // Used to just be this one line inside if (element)
+
+        const offset = 300; // Smaller = scrolls past more
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
 
   return (
     <div className="projects">
@@ -24,16 +46,17 @@ const Projects = () => {
           <div className="featured-projects-grid">
             {/* Project 1 */}
             <FeaturedProjectCard
-              title="National Bidders of Canada E-Commerce Platform"
-              description="Full-stack e-commerce solution built with Next, React, and Node.js. Features include user authentication, payment processing, inventory management, and admin dashboard for comprehensive store management."
+              id="sumobot-v2"
+              title="Sumobot V2"
+              description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
               features={[
-                "Real-time bids and inventory tracking",
-                "Admin dashboard with analytics",
-                "Mobile-responsive design",
+                "Dual ultrasonic sensors + TOF sensor",
+                "Dual IR sensors for line detection",
+                "Arduino Nano + motor driver + DC motors with Steelies",
               ]}
-              imageSrc="/placeholder.svg?height=300&width=400"
-              technologies={["React", "Node.js", "MongoDB", "Stripe"]}
-              liveUrl="#"
+              imageSrc="/src/assets/featured/sumobot-v2.jpg?height=300&width=400"
+              technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
+              liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               githubUrl="#"
               reverse={false}
               animationDelay={0}
@@ -41,12 +64,18 @@ const Projects = () => {
 
             {/* Project 2 */}
             <FeaturedProjectCard
-              title="Git Tissues Task Management App"
-              description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
-              features={["Real-time collaboration", "Drag & drop interface", "Progress tracking"]}
-              imageSrc="/placeholder.svg?height=300&width=400"
-              technologies={["React", "Socket.io", "Express", "PostgreSQL"]}
-              liveUrl="#"
+              id="national-bidders"
+              title="National Bidders of Canada"
+              description="QHacks hackathon project - Dynamic live auction platform. Live cross-platform bids, list items, user authentication."
+              features={[
+                "Real-time bids and inventory tracking",
+                "Admin dashboard with analytics",
+                "Secure user authentication and payment processing",
+                "AI Chatbot Assistant",
+              ]}
+              imageSrc="/src/assets/featured/nbc2.png"
+              technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL"]}
+              liveUrl="https://github.com/xuej41/nationalbiddersofcanada"
               githubUrl="#"
               reverse={true}
               animationDelay={1}
@@ -54,15 +83,17 @@ const Projects = () => {
 
             {/* Project 3 */}
             <FeaturedProjectCard
-              title="PlanetPal Real-Time Waste Management Assistant"
-              description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
+              id="memory-lane"
+              title="Memory Lane"
+              description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
               features={[
-                "Instant message delivery",
-                "Online status indicators",
+                "Instant Facial recognition",
+                "Database storage and retrieval",
+                "Easy to use web interface",
               ]}
-              imageSrc="/placeholder.svg?height=300&width=400"
+              imageSrc="/src/assets/featured/memorylane2.PNG"
               technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
-              liveUrl="#"
+              // liveUrl="#"
               githubUrl="#"
               reverse={false}
               animationDelay={2}
@@ -79,10 +110,10 @@ const Projects = () => {
           <div className="projects-grid">
             {/* Project 4 */}
             <AdditionalProjectCard
-              title="Other Hackathon Project"
-              description="Interactive weather dashboard with location-based forecasts, historical data visualization, and responsive design."
+              title="Git Tissues Task Management App"
+              description="Collaborative project management tool with real-time updates and team coordination features. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
               imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Chart.js", "Weather API", "CSS3"]}
+              technologies={["React", "Socket.io", "Express", "PostgreSQL"]}
               liveUrl="#"
               githubUrl="#"
               animationDelay={0}
@@ -101,10 +132,10 @@ const Projects = () => {
 
             {/* Project 6 */}
             <AdditionalProjectCard
-              title="Other Hackathon Project"
-              description="Community-driven recipe sharing platform with user profiles, recipe ratings, and advanced search functionality."
+              title="PlanetPal Waste Management Assistant"
+              description="Modern messaging platform with instant communication capabilities. Built with advanced features for seamless waste management efficiency and engagement."
               imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Firebase", "Algolia", "Tailwind"]}
+              technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
               liveUrl="#"
               githubUrl="#"
               animationDelay={2}
