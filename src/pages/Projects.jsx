@@ -54,7 +54,7 @@ const Projects = () => {
                 "Dual IR sensors for line detection",
                 "Arduino Nano + motor driver + DC motors with Steelies",
               ]}
-              imageSrc="/src/assets/featured/sumobot-v2.jpg?height=300&width=400"
+              imageSrc="/featured/sumobot-v2.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
               liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               githubUrl="#"
@@ -73,7 +73,7 @@ const Projects = () => {
                 "Secure user authentication and payment processing",
                 "AI Chatbot Assistant",
               ]}
-              imageSrc="/src/assets/featured/nbc2.png"
+              imageSrc="/featured/nbc2.png"
               technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL"]}
               liveUrl="https://github.com/xuej41/nationalbiddersofcanada"
               githubUrl="#"
@@ -91,9 +91,9 @@ const Projects = () => {
                 "Database storage and retrieval",
                 "Easy to use web interface",
               ]}
-              imageSrc="/src/assets/featured/memorylane2.PNG"
+              imageSrc="/featured/memorylane2.PNG"
               technologies={["React", "WebSocket", "Node.js", "MongoDB"]}
-              // liveUrl="#"
+              liveUrl="https://github.com/pakmangames/deltahacks11"
               githubUrl="#"
               reverse={false}
               animationDelay={2}
@@ -183,6 +183,28 @@ const Projects = () => {
               liveUrl="#"
               githubUrl="#"
               animationDelay={1}
+            />
+
+            {/* Project 11 */}
+            <AdditionalProjectCard
+              title="Recipe Sharing Platform"
+              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
+              imageSrc="/placeholder.svg?height=200&width=300"
+              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
+              liveUrl="#"
+              githubUrl="#"
+              animationDelay={4}
+            />
+
+            {/* Project 12 */}
+            <AdditionalProjectCard
+              title="Recipe Sharing Platform"
+              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
+              imageSrc="/placeholder.svg?height=200&width=300"
+              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
+              liveUrl="#"
+              githubUrl="#"
+              animationDelay={3}
             />
 
           </div>

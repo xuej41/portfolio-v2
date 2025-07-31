@@ -56,7 +56,7 @@ const Features = () => {
                 "Dual IR sensors for line detection",
                 "Arduino Nano + motor driver + DC motors with Steelies",
               ]}
-              imageSrc="/src/assets/featured/sumobot-v2.jpg?height=300&width=400"
+              imageSrc="/featured/sumobot-v2.jpg?height=300&width=400"
               reverse={false}
               animationDelay={0}
             />
@@ -72,7 +72,7 @@ const Features = () => {
               "Secure user authentication and payment processing",
               "AI Chatbot Assistant",
             ]}
-            imageSrc="/src/assets/featured/nbc2.png"
+            imageSrc="/featured/nbc2.png"
             reverse={true}
             animationDelay={1}
           />
@@ -87,7 +87,7 @@ const Features = () => {
               "Database storage and retrieval",
               "Easy to use web interface",
             ]}
-            imageSrc="/src/assets/featured/memorylane2.PNG"
+            imageSrc="/featured/memorylane2.PNG"
             reverse={false}
             animationDelay={2}
           />
