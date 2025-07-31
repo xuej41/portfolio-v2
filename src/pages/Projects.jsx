@@ -154,55 +154,55 @@ const Projects = () => {
 
             {/* Project 8 */}
             <AdditionalProjectCard
-              title="Portfolio Website"
-              description="Personal finance management application with budget tracking, expense categorization, and financial insights."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Chart.js", "LocalStorage", "CSS3"]}
-              liveUrl="#"
+              title="Sumobot"
+              description="McMaster Sumobot Competition - Building an autonomous miniature battlebot using Arduino and CAD."
+              imageSrc="/moreprojects/sumobot.jpg?height=200&width=300"
+              technologies={["C++", "Arduino", "Solidworks", "3D Print"]}
+              liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot"
               githubUrl="#"
               animationDelay={0}
             />
 
             {/* Project 9 */}
             <AdditionalProjectCard
-              title="Legacy Portfolio Website"
-              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
-              liveUrl="#"
+              title="Portfolio Website"
+              description="Personal Portfolio Website, designed and built by me. Deployed to Vercel with a custom domain."
+              imageSrc="/moreprojects/portfolio-v2.PNG?height=200&width=300"
+              technologies={["Vite", "React", "Javascript", "HTML+CSS", "Node.js"]}
+              liveUrl="https://github.com/xuej41/portfolio-v2"
               githubUrl="#"
               animationDelay={3}
             />
 
             {/* Project 10 */}
             <AdditionalProjectCard
-              title="Recipe Sharing Platform"
-              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
-              liveUrl="#"
+              title="Legacy Portfolio Website"
+              description="Leagacy Portfolio Website, designed and built by me. Deployed to Vercel."
+              imageSrc="/moreprojects/portfolio.PNG?height=200&width=300"
+              technologies={["HTML", "CSS", "Javascript", "Vercel"]}
+              liveUrl="https://github.com/xuej41/portfolio"
               githubUrl="#"
               animationDelay={1}
             />
 
             {/* Project 11 */}
             <AdditionalProjectCard
-              title="Recipe Sharing Platform"
-              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
-              liveUrl="#"
+              title="ATM Finder"
+              description="YRHacks hackathon project - Shows the nearest ATMs and other amenities on a map."
+              imageSrc="/moreprojects/ATMFinder.png?height=200&width=300"
+              technologies={["React", "Node.js", "HTML+CSS", "Javascript"]}
+              liveUrl="https://devpost.com/software/atm-finder-3a25tf"
               githubUrl="#"
               animationDelay={4}
             />
 
             {/* Project 12 */}
             <AdditionalProjectCard
-              title="Recipe Sharing Platform"
-              description="Full-featured blogging platform with markdown support, user authentication, and content management system."
-              imageSrc="/placeholder.svg?height=200&width=300"
-              technologies={["React", "Node.js", "MongoDB", "Markdown"]}
-              liveUrl="#"
+              title="Banana"
+              description="🍌 A webpage all about bananas, no seriously."
+              imageSrc="/moreprojects/banana.PNG?height=200&width=300"
+              technologies={["HTML", "CSS", "Markdown"]}
+              liveUrl="https://github.com/xuej41/banana-landing-page"
               githubUrl="#"
               animationDelay={3}
             />
