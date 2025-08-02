@@ -7,26 +7,23 @@ const About = () => {
       <div className="about-container">
         <div className="about-header">
           <h1 className="about-title">About Me</h1>
-          <p className="about-subtitle">Passionate developer with a love for creating digital experiences</p>
         </div>
 
         <div className="about-content">
           <div className="about-text">
             <div className="about-section">
-              <h2>My Story</h2>
               <p>
-                I'm a full-stack developer with over 3 years of experience in building web applications. My journey
-                started with curiosity about how websites work, and it has evolved into a passion for creating
-                innovative digital solutions.
+                Hello! I'm Josh, a passionate Computer Engineering student studying at McMaster University.
               </p>
               <p>
-                I specialize in modern JavaScript frameworks, particularly React, and have extensive experience with
-                backend technologies like Node.js and Python. I'm always eager to learn new technologies and tackle
-                challenging problems.
+                I'm based in Markham, Ontario, Canada.
+              </p>
+              <p>
+              I love to learn about the fascinating world of technology, hardware and software alike. I'm very hands-on, and enjoy tinkering with things in my free time.
               </p>
             </div>
 
-            <div className="about-section">
+            {/* <div className="about-section">
               <h2>What I Do</h2>
               <ul className="about-list">
                 <li>Full-stack web application development</li>
@@ -36,7 +33,7 @@ const About = () => {
                 <li>Performance optimization</li>
                 <li>Code review and mentoring</li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="about-image">
