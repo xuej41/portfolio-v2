@@ -6,7 +6,10 @@
   background-attachment: fixed; /* makes the image stay in place while you scroll */
   min-height: 100vh;
   display: flex;
+  flex-direction: column; /* Added to allow arrow to position at bottom */
   align-items: center;
+  justify-content: center; /* Added to center content vertically */
+  position: relative; /* Added for absolute positioning of arrow */
 }
 
 .hero::before {
@@ -26,6 +29,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  flex-grow: 1; /* Allows container to take available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content {
@@ -163,6 +171,30 @@
 
 .hero-btn-primary:hover {
   background: #7c3aed;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 0px; /* Position at the bottom of the hero section */
+  /* left: 50%; Keep left at 50% */
+  /* Removed transform: translateX(-50%) to make it slightly off-center */
+  color: gray;
+  animation: arrowPulse 3s ease-in-out infinite; /* Apply the pulsing animation */
+}
+
+@keyframes arrowPulse {
+  0% {
+    filter: brightness(0.5);
+    transform: translateY(0);
+  }
+  50% {
+    filter: brightness(1.2);
+    transform: translateY(5px); /* Slight bounce effect */
+  }
+  100% {
+    filter: brightness(0.5);
+    transform: translateY(0);
+  }
 }
 
 /* Mobile Styles */

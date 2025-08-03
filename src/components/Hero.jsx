@@ -61,14 +61,14 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <div className="hero-badge">
+          {/* <div className="hero-badge">
             <div className="hero-avatars">
               <div className="hero-avatar"></div>
               <div className="hero-avatar"></div>
               <div className="hero-avatar"></div>
             </div>
             Welcome
-          </div>
+          </div> */}
 
           <h1 className="hero-title">Hi, I'm Josh.</h1>
 
@@ -79,6 +79,23 @@ const Hero = () => {
             <span className="typewriter-cursor">|</span>
               </span>
           </p>
+        </div>
+        <div className="scroll-down-arrow">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 9L12 15L18 9"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </div>
       </div>
     </section>
