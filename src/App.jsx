@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer"
 import "./App.css"
 import { useEffect } from "react"
@@ -32,6 +33,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
