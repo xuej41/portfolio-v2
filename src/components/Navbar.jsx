@@ -60,9 +60,10 @@ const Navbar = () => {
         >
           Contact
         </Link>
-        <a href="/files/resume.pdf" target="_blank" className="nav-link" rel="noopener noreferrer">
+        {/* Too many bots scraping */}
+        {/* <a href="/files/resume.pdf" target="_blank" className="nav-link" rel="noopener noreferrer">
             Resume
-        </a>
+        </a> */}
       </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>
