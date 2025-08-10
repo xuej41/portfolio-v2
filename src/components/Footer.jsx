@@ -2,15 +2,26 @@ import React, { useState } from "react";
 import "./Footer.css"
 
 const Footer = () => {
-  const [isLightMode, setIsLightMode] = useState(false); // Dark mode by default
+  const [isLightMode, setIsLightMode] = useState(false);
+  const [isOverlayActive, setIsOverlayActive] = useState(false); // Controls the active class
 
   const toggleTheme = () => {
-    setIsLightMode(!isLightMode);
+    if (!isLightMode) {
+      // light mode
+      setIsLightMode(true);
+      setTimeout(() => setIsOverlayActive(true), 10); // Add active class after 10ms delay
+    } else {
+      // dark mode
+      setIsOverlayActive(false);
+      setTimeout(() => setIsLightMode(false), 500); // Wait for the transition to complete before hiding the overlay
+    }
   };
 
   return (
     <footer className={`footer ${isLightMode ? "light-mode" : ""}`}>
-      {isLightMode && <div className="light-overlay"></div>}
+      {isLightMode && (
+        <div className={`light-overlay ${isOverlayActive ? "active" : ""}`}></div>
+      )}
       <div className="footer-container">
         <div className="footer-main">
           <div className="footer-left">
