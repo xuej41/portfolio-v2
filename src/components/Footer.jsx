@@ -1,8 +1,16 @@
+import React, { useState } from "react";
 import "./Footer.css"
 
 const Footer = () => {
+  const [isLightMode, setIsLightMode] = useState(false); // Dark mode by default
+
+  const toggleTheme = () => {
+    setIsLightMode(!isLightMode);
+  };
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${isLightMode ? "light-mode" : ""}`}>
+      {isLightMode && <div className="light-overlay"></div>}
       <div className="footer-container">
         <div className="footer-main">
           <div className="footer-left">
@@ -40,9 +48,20 @@ const Footer = () => {
 
           <div className="footer-right">
             <div className="footer-appearance">
-              {/* <span className="appearance-text">Appearance</span>
+              <span className="appearance-text">Appearance</span>
               <div className="theme-toggle">
-                <button className="theme-btn">
+                <button
+                    className={`theme-btn ${!isLightMode ? "active" : ""}`}
+                    onClick={toggleTheme}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" strokeWidth="2" />
+                  </svg>
+                </button>
+                <button
+                  className={`theme-btn ${isLightMode ? "active" : ""}`}
+                  onClick={toggleTheme}
+                >
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2" />
                     <path
@@ -52,14 +71,7 @@ const Footer = () => {
                     />
                   </svg>
                 </button>
-                <button
-                  className="theme-btn"
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" strokeWidth="2" />
-                  </svg>
-                </button>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

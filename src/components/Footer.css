@@ -80,12 +80,6 @@
     }
   }
   
-  .footer-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
   .footer-appearance {
     display: flex;
     align-items: center;
@@ -126,6 +120,25 @@
     background: rgba(139, 92, 246, 0.1);
   }
   
+  /* white overlay for light mode */
+  .light-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999; /* above everything except footer-right */
+  }
+
+  .footer-right {
+    position: relative;
+    z-index: 1000; /* Higher than the overlay */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .footer-bottom {
     display: flex;
     justify-content: space-between;
