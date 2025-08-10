@@ -89,6 +89,7 @@
   .appearance-text {
     font-size: 14px;
     color: #888;
+    text-shadow: 0 0 10px #1a1a1a;
   }
   
   .theme-toggle {
@@ -107,6 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 10px #1a1a1a;
   }
   
   .theme-btn:hover {
@@ -129,7 +131,9 @@
     height: 100%;
     z-index: 999; /* above everything except footer-right */
     transition: opacity 0.5s ease;
-    background: rgba(255, 255, 255, 0.98);
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),  
+      url(/public/imgs/whitemode.jpg);
     opacity: 0;
 }
 
