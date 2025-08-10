@@ -127,7 +127,7 @@ const Projects = () => {
               technologies={["Bash", "Grub", "Chroot", "SDDM", "Live USB"]}
               liveUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
               githubUrl="#"
-              animationDelay={4}
+              animationDelay={2}
             />
 
             {/* Project 6 */}
@@ -138,7 +138,7 @@ const Projects = () => {
               technologies={["HTML+CSS", "Javascript", "React", "Node.js", "OpenAI"]}
               liveUrl="https://devpost.com/software/planetpal-thq27l"
               githubUrl="#"
-              animationDelay={2}
+              animationDelay={1}
             />
 
             {/* Project 7 */}
@@ -149,7 +149,7 @@ const Projects = () => {
               technologies={["Proton", "Steam", "Linux", "Compositor"]}
               liveUrl="https://www.youtube.com/watch?v=_ps8ADqXLXI"
               githubUrl="#"
-              animationDelay={4}
+              animationDelay={2}
             />
 
             {/* Project 8 */}
@@ -171,7 +171,7 @@ const Projects = () => {
               technologies={["Vite", "React", "Javascript", "HTML+CSS", "Node.js"]}
               liveUrl="https://github.com/xuej41/portfolio-v2"
               githubUrl="#"
-              animationDelay={3}
+              animationDelay={1}
             />
 
             {/* Project 10 */}
@@ -193,7 +193,7 @@ const Projects = () => {
               technologies={["React", "Node.js", "HTML+CSS", "Javascript"]}
               liveUrl="https://devpost.com/software/atm-finder-3a25tf"
               githubUrl="#"
-              animationDelay={4}
+              animationDelay={2}
             />
 
             {/* Project 12 */}
@@ -204,7 +204,7 @@ const Projects = () => {
               technologies={["HTML", "CSS", "Markdown"]}
               liveUrl="https://github.com/xuej41/banana-landing-page"
               githubUrl="#"
-              animationDelay={3}
+              animationDelay={0}
             />
 
           </div>

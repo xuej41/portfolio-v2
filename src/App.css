@@ -40,6 +40,7 @@ body {
   transition-delay: 0.2s;
 }
 
+/* 3 and 4 not used atm */
 .scroll-animate-delay-3 {
   transition-delay: 0.3s;
 }
