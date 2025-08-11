@@ -6,6 +6,7 @@ import "./Contact.css"
 
 const Contact = () => {
 
+  const [result, setResult] = useState("Send me a direct message"); // title says Send me a direct message by default (status changes on form submission)
   const [contactRef, contactVisible] = useScrollAnimation()
 
   const [formData, setFormData] = useState({
@@ -22,9 +23,29 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
+    // send logic
+    setResult("Sending....");
+    const formData = new FormData(e.target);
+
+    formData.append("access_key", "4283082b-eb8e-453f-8fe6-93880e6f2164"); // public access key no env needed
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      e.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+    // send logic end
     console.log("Form submitted:", formData)
     // Reset form
     setFormData({
@@ -95,7 +116,8 @@ const Contact = () => {
           </div>
 
           <form ref={contactRef} className={`contact-form scroll-animate scroll-animate-delay-4 ${contactVisible ? "visible" : ""}`} onSubmit={handleSubmit}>
-            <p>Send me a direct message</p>
+            {/* <p>Send me a direct message</p> result says this by default*/}
+            <p>{result}</p>
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
