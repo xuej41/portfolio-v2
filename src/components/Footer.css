@@ -39,13 +39,13 @@
   
   .footer-link {
     color: transparent; /* Make the text transparent to show the gradient */
-    background: linear-gradient(90deg, #8b5cf6, #09ff0080, #ff0000b0, #8b5cf6); /* Gradient colors */
+    background: linear-gradient(90deg, #4c00ff, #09ff0080, #ff0000b0, #4c00ff); /* Gradient colors */
     background-size: 200%; /* Make the gradient larger for the animation */
     background-clip: text;
     -webkit-background-clip: text; /* For WebKit browsers */
     text-fill-color: transparent; /* For WebKit browsers */
     -webkit-text-fill-color: transparent; /* For WebKit browsers */
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
     animation: gradient-move 3s infinite linear; /* Add animation */
     transition: all 0.3s ease;

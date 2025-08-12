@@ -45,7 +45,7 @@
   margin: 0 auto;
 }
 
-.hero-badge {
+/* .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -83,7 +83,7 @@
 }
 .hero-avatar:nth-child(3) {
   background: #45b7d1;
-}
+} */
 
 .hero-title {
   font-size: 4rem;

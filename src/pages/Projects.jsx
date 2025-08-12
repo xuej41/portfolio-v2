@@ -33,7 +33,7 @@ const Projects = () => {
     <div className="projects">
       <div className="projects-container">
         <div className="projects-header">
-          <h1 className="projects-title">My Projects</h1>
+          <h1 className="projects-title">Projects</h1>
           <p className="projects-subtitle">A showcase of all my work and technical expertise.</p>
         </div>
 

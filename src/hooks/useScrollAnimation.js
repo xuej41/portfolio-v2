@@ -17,7 +17,7 @@ export const useScrollAnimation = (options = {}) => {
       },
       {
         threshold: 0.1, // Trigger when 10% of element is visible
-        rootMargin: "-50px 0px", // Start animation 50px before element enters viewport
+        rootMargin: "-50px 0px", // Start animation 50px before element enters viewport (Contact page has issues on mobile unless its at like 1000px)
         ...options,
       },
     )
