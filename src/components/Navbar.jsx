@@ -46,13 +46,13 @@ const Navbar = () => {
         >
           Projects
         </Link> 
-        <Link
+        {/* <Link
           to="/about"
           className={`nav-link ${isActive("/about") ? "active" : ""}`}
           onClick={() => handleLinkClick("/about")}
         >
           About
-        </Link>
+        </Link> */}
         <Link
           to="/contact"
           className={`nav-link ${isActive("/contact") ? "active" : ""}`}
