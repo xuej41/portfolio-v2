@@ -7,7 +7,8 @@ const Stats = () => {
   const skills = [
     { name: "Git", image: "/skills/git.svg?height=60&width=60" },
     { name: "Python", image: "/skills/python.svg?height=60&width=60" },
-    { name: "C/C++", image: "/skills/cpp.svg?height=60&width=60" },
+    { name: "C", image: "/skills/c.svg?height=60&width=60" },
+    { name: "C++", image: "/skills/cpp.svg?height=60&width=60" },
     { name: "Arduino", image: "/skills/arduino.svg?height=60&width=60" },
     { name: "Linux", image: "/skills/linux.svg?height=60&width=60" },
     { name: "Docker", image: "/skills/docker.svg?height=60&width=60" },
