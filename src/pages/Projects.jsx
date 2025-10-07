@@ -46,6 +46,43 @@ const Projects = () => {
           <div className="featured-projects-grid">
             {/* Project 1 */}
             <FeaturedProjectCard
+              id="chessmate"
+              title="ChessMate"
+              description="🏆 Winner @ Hack the North 2025 — Autonomous AI-Powered Robotic Chessboard. Features autonomous piece movement, voice-controlled interaction, and remote AI coaching, all integrated through a web platform."
+              features={[
+                "Dual-axis gantry powered by Arduino and stepper motors/drivers",
+                "Piece tracking with OpenCV and movement logic with Python",
+                "Stockfish-powered chess engine logic with real-time gameplay",
+                "Agentic AI coaching, voice commands, and web app integration",
+              ]}
+              imageSrc="/featured/chessmate2.jpg?height=300&width=400"
+              technologies={["Python", "Arduino", "Next.js", "Groq"]} 
+              liveUrl="https://devpost.com/software/chessmate-nwygvq"
+              githubUrl="#"
+              reverse={false}
+              animationDelay={0}
+            />
+
+            {/* Project 2 */}
+            <FeaturedProjectCard
+              id="memory-lane"
+              title="Memory Lane"
+              description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
+              features={[
+                "Instant Facial recognition",
+                "Database storage and retrieval",
+                "Easy to use web interface",
+              ]}
+              imageSrc="/featured/memorylane2.PNG"
+              technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
+              liveUrl="https://devpost.com/software/memory-lane-dhke7c"
+              githubUrl="#"
+              reverse={true}
+              animationDelay={1}
+            />
+
+            {/* Project 3 */}
+            <FeaturedProjectCard
               id="sumobot-v2"
               title="Sumobot V2"
               description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
@@ -59,10 +96,10 @@ const Projects = () => {
               liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               githubUrl="#"
               reverse={false}
-              animationDelay={0}
+              animationDelay={2}
             />
 
-            {/* Project 2 */}
+            {/* Project 4 */}
             <FeaturedProjectCard
               id="national-bidders"
               title="National Bidders of Canada"
@@ -78,26 +115,10 @@ const Projects = () => {
               liveUrl="https://devpost.com/software/national-bidders-of-canada"
               githubUrl="#"
               reverse={true}
-              animationDelay={1}
+              animationDelay={3}
             />
 
-            {/* Project 3 */}
-            <FeaturedProjectCard
-              id="memory-lane"
-              title="Memory Lane"
-              description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
-              features={[
-                "Instant Facial recognition",
-                "Database storage and retrieval",
-                "Easy to use web interface",
-              ]}
-              imageSrc="/featured/memorylane2.PNG"
-              technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
-              liveUrl="https://devpost.com/software/memory-lane-dhke7c"
-              githubUrl="#"
-              reverse={false}
-              animationDelay={2}
-            />
+            
           </div>
         </div>
 

@@ -47,6 +47,35 @@ const Features = () => {
 
         <div className="features-grid">
           {/* Project 1 */}
+          <ProjectCard
+              id="chessmate"
+              title="ChessMate"
+              description="🏆 Winner @ Hack the North 2025 — Autonomous AI-Powered Robotic Chessboard. Features autonomous piece movement, voice-controlled interaction, and remote AI coaching, all integrated through a web platform."
+              features={[
+                "Dual-axis gantry powered by Arduino and stepper motors/drivers",
+                "Piece tracking with OpenCV and movement logic with Python",
+                "Stockfish-powered chess engine logic with real-time gameplay",
+                "Agentic AI coaching, voice commands, and web app integration",
+              ]}
+              imageSrc="/featured/chessmate2.jpg?height=300&width=400"
+              reverse={false}
+              animationDelay={0}
+            />
+          {/* Project 2 */}
+          <ProjectCard
+            id="memory-lane"
+            title="Memory Lane"
+            description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
+            features={[
+              "Instant Facial recognition",
+              "Database storage and retrieval",
+              "Easy to use web interface",
+            ]}
+            imageSrc="/featured/memorylane2.PNG"
+            reverse={true}
+            animationDelay={1}
+          />
+          {/* Project 3 */}
             <ProjectCard
               id="sumobot-v2"
               title="Sumobot V2"
@@ -58,10 +87,9 @@ const Features = () => {
               ]}
               imageSrc="/featured/sumobot-v2.jpg?height=300&width=400"
               reverse={false}
-              animationDelay={0}
+              animationDelay={2}
             />
-
-          {/* Project 2 */}
+          {/* Project 4 */}
           <ProjectCard
             id="national-bidders"
             title="National Bidders of Canada"
@@ -74,22 +102,7 @@ const Features = () => {
             ]}
             imageSrc="/featured/nbc2.png"
             reverse={true}
-            animationDelay={1}
-          />
-
-          {/* Project 3 */}
-          <ProjectCard
-            id="memory-lane"
-            title="Memory Lane"
-            description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
-            features={[
-              "Instant Facial recognition",
-              "Database storage and retrieval",
-              "Easy to use web interface",
-            ]}
-            imageSrc="/featured/memorylane2.PNG"
-            reverse={false}
-            animationDelay={2}
+            animationDelay={3}
           />
         </div>
 
