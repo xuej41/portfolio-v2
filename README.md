@@ -8,7 +8,7 @@ This website is made using [React](https://react.dev/) boostrapped with [Vite](h
 
 ## Learn More
 
-This project is currently deployed to Vercel with a custom domain. Visit it at [https://joshx.tech/](https://joshx.tech/)!
+This project is currently deployed to Vercel with a custom domain. Visit it at [https://joshx.ca/](https://joshx.ca/)!
 
 ## Technologies Used
 
