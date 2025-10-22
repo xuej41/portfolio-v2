@@ -73,7 +73,7 @@ const Projects = () => {
                 "Database storage and retrieval",
                 "Easy to use web interface",
               ]}
-              imageSrc="/featured/memorylane2.PNG"
+              imageSrc="/featured/memorylane.jpg?height=300&width=400"
               technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
               liveUrl="https://devpost.com/software/memory-lane-dhke7c"
               githubUrl="#"
@@ -91,7 +91,7 @@ const Projects = () => {
                 "Dual IR sensors for line detection",
                 "Arduino Nano + motor driver + DC motors with Steelies",
               ]}
-              imageSrc="/featured/sumobot-v2.jpg?height=300&width=400"
+              imageSrc="/featured/sumobot-v22.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
               liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               githubUrl="#"
@@ -110,7 +110,7 @@ const Projects = () => {
                 "Secure user authentication and payment processing",
                 "AI Chatbot Assistant",
               ]}
-              imageSrc="/featured/nbc2.png"
+              imageSrc="/featured/nbc2.jpg"
               technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
               liveUrl="https://devpost.com/software/national-bidders-of-canada"
               githubUrl="#"

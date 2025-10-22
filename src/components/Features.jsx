@@ -57,7 +57,7 @@ const Features = () => {
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
               ]}
-              imageSrc="/featured/chessmate2.jpg?height=300&width=400"
+              imageSrc="/featured/chessmate.jpg?height=300&width=400"
               reverse={false}
               animationDelay={0}
             />
@@ -71,7 +71,7 @@ const Features = () => {
               "Database storage and retrieval",
               "Easy to use web interface",
             ]}
-            imageSrc="/featured/memorylane2.PNG"
+            imageSrc="/featured/memorylane2.PNG?height=300&width=400"
             reverse={true}
             animationDelay={1}
           />
@@ -100,7 +100,7 @@ const Features = () => {
               "Secure user authentication and payment processing",
               "AI Chatbot Assistant",
             ]}
-            imageSrc="/featured/nbc2.png"
+            imageSrc="/featured/nbc.png"
             reverse={true}
             animationDelay={3}
           />
