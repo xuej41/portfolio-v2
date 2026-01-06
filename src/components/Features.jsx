@@ -57,7 +57,7 @@ const Features = () => {
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
               ]}
-              imageSrc="/featured/chessmate.jpg?height=300&width=400"
+              imageSrc="/featured/chessmate3.jpg?height=300&width=400"
               reverse={false}
               animationDelay={0}
             />
