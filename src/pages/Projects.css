@@ -110,16 +110,17 @@
 .featured-project-link {
   background: #667eea;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 100px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 .featured-project-link:hover {
-  background: #5a67d8;
+  background: #667eea80;
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
 .featured-project-visual {

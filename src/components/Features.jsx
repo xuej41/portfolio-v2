@@ -22,7 +22,7 @@ const ProjectCard = ({ id, title, description, features, imageSrc, reverse = fal
           ))}
         </ul>
         <Link to={`/projects#${id}`} className="btn btn-primary">
-            View Project
+            Learn More
         </Link>
       </div>
       <div className="feature-project-visual">
@@ -107,8 +107,8 @@ const Features = () => {
         </div>
 
         <div className="features-cta">
-          <Link to="/projects" className="btn btn-outline">
-            View All Projects
+          <Link to="/projects#more-projects" className="btn btn-outline">
+            View More Projects
           </Link>
         </div>
       </div>

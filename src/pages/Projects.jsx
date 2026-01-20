@@ -124,6 +124,7 @@ const Projects = () => {
 
         {/* Additional Projects Section */}
         <div
+          id="more-projects"
           ref={additionalSectionRef}
           className={`additional-projects-section scroll-animate ${additionalSectionVisible ? "visible" : ""}`}
         >
