@@ -50,7 +50,7 @@ const Projects = () => {
               title="ChessMate"
               description="🏆 Winner @ Hack the North 2025 — Autonomous AI-Powered Robotic Chessboard. Features autonomous piece movement, voice-controlled interaction, and remote AI coaching, all integrated through a web platform."
               features={[
-                "Dual-axis gantry powered by Arduino and stepper motors/drivers",
+                "3-DoF gantry powered by Arduino and stepper motors/drivers",
                 "Piece tracking with OpenCV and movement logic with Python",
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
