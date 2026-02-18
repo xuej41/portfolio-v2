@@ -57,7 +57,7 @@ const Projects = () => {
               ]}
               imageSrc="/featured/chessmate4.jpg?height=300&width=400"
               technologies={["Python", "Arduino", "Next.js", "Groq"]} 
-              liveUrl="https://devpost.com/software/chessmate-nwygvq"
+              internalUrl="/projects/chessmate"
               githubUrl="#"
               reverse={false}
               animationDelay={0}
@@ -75,7 +75,7 @@ const Projects = () => {
               ]}
               imageSrc="/featured/memorylane.jpg?height=300&width=400"
               technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
-              liveUrl="https://devpost.com/software/memory-lane-dhke7c"
+              internalUrl="/projects/memory-lane"
               githubUrl="#"
               reverse={true}
               animationDelay={1}
@@ -93,7 +93,7 @@ const Projects = () => {
               ]}
               imageSrc="/featured/sumobot-v22.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
-              liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
+              internalUrl="/projects/sumobot-v2"
               githubUrl="#"
               reverse={false}
               animationDelay={2}
@@ -112,7 +112,7 @@ const Projects = () => {
               ]}
               imageSrc="/featured/nbc2.jpg"
               technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
-              liveUrl="https://devpost.com/software/national-bidders-of-canada"
+              internalUrl="/projects/national-bidders"
               githubUrl="#"
               reverse={true}
               animationDelay={3}

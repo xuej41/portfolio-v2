@@ -5,6 +5,10 @@ import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 // import About from "./pages/About"
 import Projects from "./pages/Projects"
+import ChessMate from "./pages/ChessMate"
+import MemoryLane from "./pages/MemoryLane"
+import SumobotV2 from "./pages/SumobotV2"
+import NationalBidders from "./pages/NationalBidders"
 import Contact from "./pages/Contact"
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer"
@@ -32,6 +36,10 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} /> */}
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/chessmate" element={<ChessMate />} />
+          <Route path="/projects/memory-lane" element={<MemoryLane />} />
+          <Route path="/projects/sumobot-v2" element={<SumobotV2 />} />
+          <Route path="/projects/national-bidders" element={<NationalBidders />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -58,7 +58,8 @@ const Footer = () => {
           </div>
 
           <div className="footer-right">
-            <div className="footer-appearance">
+            {/* Dark and Light mode, disabled for now */}
+            {/* <div className="footer-appearance">
               <span className="appearance-text">Appearance</span>
               <div className="theme-toggle">
                 <button
@@ -83,7 +84,7 @@ const Footer = () => {
                   </svg>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
