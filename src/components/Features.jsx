@@ -41,7 +41,7 @@ const Features = () => {
         <div className="features-header">
           <h2 className="features-title">Featured Projects</h2>
           <p className="features-description">
-            Showcase of recent work and technical expertise.
+            Showcase of my recent work and technical expertise.
           </p>
         </div>
 
@@ -78,12 +78,12 @@ const Features = () => {
           {/* Project 3 */}
             <ProjectCard
               id="sumobot-v2"
-              title="Sumobot V2"
+              title="Autonomous Sumobot V2"
               description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
               features={[
-                "Dual ultrasonic sensors + TOF sensor",
-                "Dual IR sensors for line detection",
-                "Arduino Nano + motor driver + DC motors with Steelies",
+                "5-sensor design (ultrasonic + TOF + Infrared) for 180° perception",
+                "Arduino Nano powering motor driver + DC motors, servo flaps",
+                "Custom designed 3D-printed chassis with 6000mAh battery pack",
               ]}
               imageSrc="/featured/sumobot-v2.jpg?height=300&width=400"
               reverse={false}

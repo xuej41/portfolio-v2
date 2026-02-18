@@ -84,12 +84,12 @@ const Projects = () => {
             {/* Project 3 */}
             <FeaturedProjectCard
               id="sumobot-v2"
-              title="Sumobot V2"
+              title="Autonomous Sumobot V2"
               description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
               features={[
-                "Dual ultrasonic sensors + TOF sensor",
-                "Dual IR sensors for line detection",
-                "Arduino Nano + motor driver + DC motors with Steelies",
+                "5-sensor design (ultrasonic + TOF + Infrared) for 180° perception",
+                "Arduino Nano powering motor driver + DC motors, servo flaps",
+                "Custom designed 3D-printed chassis with 6000mAh battery pack",
               ]}
               imageSrc="/featured/sumobot-v22.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
