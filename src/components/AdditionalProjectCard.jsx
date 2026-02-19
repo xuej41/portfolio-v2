@@ -7,8 +7,7 @@ const AdditionalProjectCard = ({
   description,
   imageSrc,
   technologies,
-  liveUrl,
-  githubUrl,
+  links = [], // Array of { label, url } objects
   animationDelay = 0,
 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
@@ -22,18 +21,16 @@ const AdditionalProjectCard = ({
         <img src={imageSrc || "/placeholder.svg"} alt={title} />
         <div className="project-overlay">
           <div className="project-links">
-            <a href={liveUrl} className="project-link" target="_blank" rel="noopener noreferrer">
-              View Project
-                {/* svg of external link icon */}
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"style={{ marginLeft: '5px', verticalAlign: 'text-top'}}>
+            {links.map((link, index) => (
+              <a key={index} href={link.url} className="project-link" target="_blank" rel="noopener noreferrer">
+                {link.label}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: '5px', verticalAlign: 'text-top'}}>
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                   <polyline points="15 3 21 3 21 9"></polyline>
                   <line x1="10" y1="14" x2="21" y2="3"></line>
                 </svg>
-            </a>
-            {/* <a href={githubUrl} className="project-link" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a> */}
+              </a>
+            ))}
           </div>
         </div>
       </div>

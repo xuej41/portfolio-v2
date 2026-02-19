@@ -136,8 +136,10 @@ const Projects = () => {
               description="ConUHacks hackathon project - Collaborative project management tool to sort Git Issues using AI GitHub profile analysis. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
               imageSrc="/moreprojects/GitTissues2.png?height=200&width=300"
               technologies={["Next.js", "Express.js", "GraphQL", "React", "OpenAI", "Postman"]}
-              liveUrl="https://devpost.com/software/git-tissues"
-              githubUrl="#"
+              links={[
+                { label: "GitHub", url: "https://github.com/MarcoDava/ConUHacks" },
+                { label: "Devpost", url: "https://devpost.com/software/git-tissues" }
+              ]}
               animationDelay={0}
             />
 
@@ -147,8 +149,9 @@ const Projects = () => {
               description="YouTube video project - Using Arch's Chroot feature to fix bootloader and package issues through a live usb."
               imageSrc="/moreprojects/chroot_video.PNG?height=200&width=300"
               technologies={["Bash", "Grub", "Chroot", "SDDM", "Live USB"]}
-              liveUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
-              githubUrl="#"
+              links={[
+                { label: "YouTube", url: "https://www.youtube.com/watch?v=t-bdztED6Sg" }
+              ]}
               animationDelay={2}
             />
 
@@ -158,8 +161,10 @@ const Projects = () => {
               description="TerraHacks hackathon project - Personal waste management assistant web app. Instant communication capabilities, built with advanced features for efficiency and engagement."
               imageSrc="/moreprojects/PlanetPal.PNG?height=200&width=300"
               technologies={["HTML+CSS", "Javascript", "React", "Node.js", "OpenAI"]}
-              liveUrl="https://devpost.com/software/planetpal-thq27l"
-              githubUrl="#"
+              links={[
+                { label: "GitHub", url: "https://github.com/PakmanGames/PlanetPal" },
+                { label: "Devpost", url: "https://devpost.com/software/planetpal-thq27l" }
+              ]}
               animationDelay={1}
             />
 
@@ -169,8 +174,9 @@ const Projects = () => {
               description="YouTube video project - Running Cry of Fear on Arch Linux through Steam Proton."
               imageSrc="/moreprojects/cof_video.jpg?height=200&width=300"
               technologies={["Proton", "Steam", "Linux", "Compositor"]}
-              liveUrl="https://www.youtube.com/watch?v=_ps8ADqXLXI"
-              githubUrl="#"
+              links={[
+                { label: "YouTube", url: "https://www.youtube.com/watch?v=_ps8ADqXLXI" }
+              ]}
               animationDelay={2}
             />
 
@@ -180,8 +186,9 @@ const Projects = () => {
               description="McMaster Sumobot Competition - Building an autonomous miniature battlebot using Arduino and CAD."
               imageSrc="/moreprojects/sumobot.jpg?height=200&width=300"
               technologies={["C++", "Arduino", "Solidworks", "3D Print"]}
-              liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot"
-              githubUrl="#"
+              links={[
+                { label: "GitHub", url: "https://github.com/xuej41/arduino-projects/tree/main/sumobot" }
+              ]}
               animationDelay={0}
             />
 
@@ -191,8 +198,9 @@ const Projects = () => {
               description="Personal Portfolio Website, designed and built by me. Deployed to Vercel with a custom domain."
               imageSrc="/moreprojects/portfolio-v2.PNG?height=200&width=300"
               technologies={["Vite", "React", "Javascript", "HTML+CSS", "Node.js"]}
-              liveUrl="https://github.com/xuej41/portfolio-v2"
-              githubUrl="#"
+              links={[
+                { label: "GitHub", url: "https://github.com/xuej41/portfolio-v2" }
+              ]}
               animationDelay={1}
             />
 
@@ -202,8 +210,10 @@ const Projects = () => {
               description="Leagacy Portfolio Website, designed and built by me. Deployed to Vercel."
               imageSrc="/moreprojects/portfolio.PNG?height=200&width=300"
               technologies={["HTML", "CSS", "Javascript", "Vercel"]}
-              liveUrl="https://github.com/xuej41/portfolio"
-              githubUrl="#"
+              links={[
+                { label: "Website", url: "https://joshx.vercel.app/" },
+                { label: "GitHub", url: "https://github.com/xuej41/portfolio" }
+              ]}
               animationDelay={1}
             />
 
@@ -213,8 +223,9 @@ const Projects = () => {
               description="YRHacks hackathon project - Shows the nearest ATMs and other amenities on a map."
               imageSrc="/moreprojects/ATMFinder.png?height=200&width=300"
               technologies={["React", "Node.js", "HTML+CSS", "Javascript"]}
-              liveUrl="https://devpost.com/software/atm-finder-3a25tf"
-              githubUrl="#"
+              links={[
+                { label: "Devpost", url: "https://devpost.com/software/atm-finder-3a25tf" }
+              ]}
               animationDelay={2}
             />
 
@@ -224,8 +235,10 @@ const Projects = () => {
               description="🍌 A webpage all about bananas, no seriously."
               imageSrc="/moreprojects/banana.PNG?height=200&width=300"
               technologies={["HTML", "CSS", "Markdown"]}
-              liveUrl="https://github.com/xuej41/banana-landing-page"
-              githubUrl="#"
+              links={[
+                { label: "GitHub", url: "https://github.com/xuej41/banana-landing-page" },
+                { label: "Website", url: "https://xuej41.github.io/banana-landing-page/" }
+              ]}
               animationDelay={0}
             />
 
