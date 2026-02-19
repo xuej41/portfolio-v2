@@ -97,12 +97,16 @@
 
 .featured-project-links {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
 }
 
 .featured-project-link {
   background: #667eea;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;

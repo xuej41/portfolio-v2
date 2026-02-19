@@ -81,10 +81,13 @@ body {
   min-width: 120px;
 }
 
-.btn-primary {
+.btn-primary { /* Used for the featured projects in Home, Send Message contact page, 404 not found go back home */
   background: #667eea;
   color: white;
+  font-weight: 500;
   margin-top: 10px; /* Only here for the featured projects in Home */
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
