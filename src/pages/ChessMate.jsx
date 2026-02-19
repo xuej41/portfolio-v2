@@ -255,9 +255,16 @@ const ChessMate = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              View on Devpost
+              Devpost
             </a>
-            {/* Add more links as needed */}
+            <a 
+              href="https://github.com/o-bm/ChessMate" 
+              className="project-link-btn"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </div>
         </section>
       </div>

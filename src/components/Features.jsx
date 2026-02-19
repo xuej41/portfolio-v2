@@ -21,7 +21,7 @@ const ProjectCard = ({ id, title, description, features, imageSrc, reverse = fal
             </li>
           ))}
         </ul>
-        <Link to={`/projects#${id}`} className="btn btn-primary">
+        <Link to={`/projects/${id}`} className="btn btn-primary">
             Learn More
         </Link>
       </div>
