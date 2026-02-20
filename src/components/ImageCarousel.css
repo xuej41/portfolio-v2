@@ -34,7 +34,8 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-.carousel-slide img {
+.carousel-slide img,
+.carousel-slide video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -194,4 +195,22 @@
     height: 30px;
     font-size: 1.2rem;
   }
+}
+
+/* Media Lightbox Trigger */
+.media-lightbox-trigger {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.media-lightbox-trigger:hover {
+  opacity: 0.85;
+}
+
+.media-lightbox-trigger img,
+.media-lightbox-trigger video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

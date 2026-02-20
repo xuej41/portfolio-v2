@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ImageCarousel from "../components/ImageCarousel";
+import MediaLightbox from "../components/MediaLightbox";
 import "./ProjectPage.css";
 
 const SumobotV2 = () => {
@@ -90,7 +91,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="CAD design phase" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="CAD design phase" />
                 </div>
               </div>
             </div>
@@ -107,10 +108,10 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="3D printing" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="3D printing" />
                 </div>
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="Assembly" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Assembly" />
                 </div>
               </div>
             </div>
@@ -127,7 +128,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="Electronics wiring" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Electronics wiring" />
                 </div>
               </div>
             </div>
@@ -144,10 +145,10 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="Sensor testing" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Sensor testing" />
                 </div>
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="Programming" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Programming" />
                 </div>
               </div>
             </div>
@@ -164,7 +165,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <img src="/featured/sumobot-v22.jpg" alt="Testing phase" />
+                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Testing phase" />
                 </div>
               </div>
             </div>

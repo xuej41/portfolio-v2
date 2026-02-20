@@ -104,13 +104,19 @@ const ImageCarousel = ({ images = [] }) => {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div className="carousel-track" ref={trackRef}>
-            {extendedImages.map((img, index) => (
+            {extendedImages.map((item, index) => (
               <div
                 key={index}
                 className="carousel-slide"
                 onClick={() => openLightbox(index)}
               >
-                <img src={img.src} alt={img.alt || `Image ${(index % images.length) + 1}`} />
+                {item.type === "video" ? (
+                  <video autoPlay loop muted playsInline>
+                    <source src={item.src} type="video/mp4" />
+                  </video>
+                ) : (
+                  <img src={item.src} alt={item.alt || `Image ${(index % images.length) + 1}`} />
+                )}
               </div>
             ))}
           </div>
@@ -131,11 +137,24 @@ const ImageCarousel = ({ images = [] }) => {
             <button className="lightbox-nav lightbox-prev" onClick={lightboxPrev} aria-label="Previous">
               ‹
             </button>
-            <img
-              src={images[lightboxIndex].src}
-              alt={images[lightboxIndex].alt || `Image ${lightboxIndex + 1}`}
-              className="lightbox-image"
-            />
+            {images[lightboxIndex].type === "video" ? (
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                className="lightbox-image"
+              >
+                <source src={images[lightboxIndex].src} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={images[lightboxIndex].src}
+                alt={images[lightboxIndex].alt || `Image ${lightboxIndex + 1}`}
+                className="lightbox-image"
+              />
+            )}
             <button className="lightbox-nav lightbox-next" onClick={lightboxNext} aria-label="Next">
               ›
             </button>

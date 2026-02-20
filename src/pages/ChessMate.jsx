@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ImageCarousel from "../components/ImageCarousel";
+import MediaLightbox from "../components/MediaLightbox";
 import "./ProjectPage.css";
 
 const ChessMate = () => {
@@ -90,7 +91,7 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Design phase" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Design phase" />
                 </div>
               </div>
             </div>
@@ -107,10 +108,13 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Hardware assembly 1" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Hardware assembly 1" />
                 </div>
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Hardware assembly 2" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Hardware assembly 2" />
+                </div>
+                <div className="build-step-image">
+                  <MediaLightbox src="/videos/wave_1.mp4" type="video" alt="Hardware demo" />
                 </div>
               </div>
             </div>
@@ -127,7 +131,7 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Computer vision setup" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Computer vision setup" />
                 </div>
               </div>
             </div>
@@ -144,10 +148,10 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Software development" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Software development" />
                 </div>
                 <div className="build-step-image">
-                  <img src="/featured/chessmate4.jpg" alt="Web app interface" />
+                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Web app interface" />
                 </div>
               </div>
             </div>
@@ -180,6 +184,7 @@ const ChessMate = () => {
           <ImageCarousel images={[
             { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 1" },
             { src: "/imgs/whitemode.jpg", alt: "ChessMate Image 2" },
+            { src: "/public/videos/wave_1.mp4", alt: "ChessMate Image 3", type: "video" },
             { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 3" },
             { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 4" },
             { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 5" },
