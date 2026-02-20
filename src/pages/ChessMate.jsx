@@ -34,7 +34,7 @@ const ChessMate = () => {
         <section className="project-hero-media">
           <div className="media-placeholder">
             <img 
-              src="/featured/chessmate4.jpg" 
+              src="/featuredprojects/chessmate4.jpg" 
               alt="ChessMate Project Hero" 
               className="hero-image"
             />
@@ -91,7 +91,7 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Design phase" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Design phase" />
                 </div>
               </div>
             </div>
@@ -108,10 +108,10 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Hardware assembly 1" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Hardware assembly 1" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Hardware assembly 2" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Hardware assembly 2" />
                 </div>
                 <div className="build-step-image">
                   <MediaLightbox src="/videos/wave_1.mp4" type="video" alt="Hardware demo" />
@@ -131,7 +131,7 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Computer vision setup" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Computer vision setup" />
                 </div>
               </div>
             </div>
@@ -148,10 +148,10 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Software development" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Software development" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/chessmate4.jpg" alt="Web app interface" />
+                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Web app interface" />
                 </div>
               </div>
             </div>
@@ -182,13 +182,13 @@ const ChessMate = () => {
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>
           <ImageCarousel images={[
-            { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 1" },
+            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 1" },
             { src: "/imgs/whitemode.jpg", alt: "ChessMate Image 2" },
             { src: "/public/videos/wave_1.mp4", alt: "ChessMate Image 3", type: "video" },
-            { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 3" },
-            { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 4" },
-            { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 5" },
-            { src: "/featured/chessmate4.jpg", alt: "ChessMate Image 6" },
+            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 3" },
+            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 4" },
+            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 5" },
+            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 6" },
           ]} />
         </section>
 

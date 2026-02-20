@@ -32,7 +32,7 @@ const MemoryLane = () => {
         <section className="project-hero-media">
           <div className="media-placeholder">
             <img 
-              src="/featured/memorylane.jpg" 
+              src="/featuredprojects/memorylane.jpg" 
               alt="Memory Lane Project Hero" 
               className="hero-image"
             />
@@ -77,9 +77,9 @@ const MemoryLane = () => {
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>
           <ImageCarousel images={[
-            { src: "/featured/memorylane.jpg", alt: "Memory Lane Image 1" },
-            { src: "/featured/memorylane.jpg", alt: "Memory Lane Image 2" },
-            { src: "/featured/memorylane.jpg", alt: "Memory Lane Image 3" },
+            { src: "/featuredprojects/memorylane.jpg", alt: "Memory Lane Image 1" },
+            { src: "/featuredprojects/memorylane.jpg", alt: "Memory Lane Image 2" },
+            { src: "/featuredprojects/memorylane.jpg", alt: "Memory Lane Image 3" },
           ]} />
         </section>
 

@@ -55,7 +55,7 @@ const Projects = () => {
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
               ]}
-              imageSrc="/featured/chessmate4.jpg?height=300&width=400"
+              imageSrc="/featuredprojects/chessmate4.jpg?height=300&width=400"
               technologies={["Python", "Arduino", "Next.js", "Groq"]} 
               internalUrl="/projects/chessmate"
               githubUrl="#"
@@ -73,9 +73,10 @@ const Projects = () => {
                 "Arduino Nano powering motor driver + DC motors, servo flaps",
                 "Custom designed 3D-printed chassis with 6000mAh battery pack",
               ]}
-              imageSrc="/featured/sumobot-v22.jpg?height=300&width=400"
+              imageSrc="/featuredprojects/sumobot-v22.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
-              internalUrl="/projects/sumobot-v2"
+              // internalUrl="/projects/sumobot-v2"
+              liveUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               githubUrl="#"
               reverse={true}
               animationDelay={1}
@@ -91,9 +92,10 @@ const Projects = () => {
                 "Database storage and retrieval",
                 "Easy to use web interface",
               ]}
-              imageSrc="/featured/memorylane.jpg?height=300&width=400"
+              imageSrc="/featuredprojects/memorylane.jpg?height=300&width=400"
               technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
-              internalUrl="/projects/memory-lane"
+              // internalUrl="/projects/memory-lane"
+              liveUrl="https://devpost.com/software/memory-lane-pwa0fe"
               githubUrl="#"
               reverse={false}
               animationDelay={2}
@@ -110,9 +112,10 @@ const Projects = () => {
                 "Secure user authentication and payment processing",
                 "AI Chatbot Assistant",
               ]}
-              imageSrc="/featured/nbc2.jpg"
+              imageSrc="/featuredprojects/nbc2.jpg"
               technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
-              internalUrl="/projects/national-bidders"
+              // internalUrl="/projects/national-bidders"
+              liveUrl="https://devpost.com/software/national-bidders-of-canada"
               githubUrl="#"
               reverse={true}
               animationDelay={3}

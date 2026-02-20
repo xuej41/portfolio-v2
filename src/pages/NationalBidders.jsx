@@ -33,7 +33,7 @@ const NationalBidders = () => {
         <section className="project-hero-media">
           <div className="media-placeholder">
             <img 
-              src="/featured/nbc2.jpg" 
+              src="/featuredprojects/nbc2.jpg" 
               alt="National Bidders of Canada Project Hero" 
               className="hero-image"
             />
@@ -78,9 +78,9 @@ const NationalBidders = () => {
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>
           <ImageCarousel images={[
-            { src: "/featured/nbc2.jpg", alt: "National Bidders Image 1" },
-            { src: "/featured/nbc2.jpg", alt: "National Bidders Image 2" },
-            { src: "/featured/nbc2.jpg", alt: "National Bidders Image 3" },
+            { src: "/featuredprojects/nbc2.jpg", alt: "National Bidders Image 1" },
+            { src: "/featuredprojects/nbc2.jpg", alt: "National Bidders Image 2" },
+            { src: "/featuredprojects/nbc2.jpg", alt: "National Bidders Image 3" },
           ]} />
         </section>
 

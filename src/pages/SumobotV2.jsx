@@ -33,7 +33,7 @@ const SumobotV2 = () => {
         <section className="project-hero-media">
           <div className="media-placeholder">
             <img 
-              src="/featured/sumobot-v22.jpg" 
+              src="/featuredprojects/sumobot-v22.jpg" 
               alt="Sumobot V2 Project Hero" 
               className="hero-image"
             />
@@ -91,7 +91,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="CAD design phase" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="CAD design phase" />
                 </div>
               </div>
             </div>
@@ -108,10 +108,10 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="3D printing" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="3D printing" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Assembly" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="Assembly" />
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Electronics wiring" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="Electronics wiring" />
                 </div>
               </div>
             </div>
@@ -145,10 +145,10 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Sensor testing" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="Sensor testing" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Programming" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="Programming" />
                 </div>
               </div>
             </div>
@@ -165,7 +165,7 @@ const SumobotV2 = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featured/sumobot-v22.jpg" alt="Testing phase" />
+                  <MediaLightbox src="/featuredprojects/sumobot-v22.jpg" alt="Testing phase" />
                 </div>
               </div>
             </div>
@@ -196,12 +196,12 @@ const SumobotV2 = () => {
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>
           <ImageCarousel images={[
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 1" },
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 2" },
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 3" },
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 4" },
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 5" },
-            { src: "/featured/sumobot-v22.jpg", alt: "Sumobot V2 Image 6" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 1" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 2" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 3" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 4" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 5" },
+            { src: "/featuredprojects/sumobot-v22.jpg", alt: "Sumobot V2 Image 6" },
           ]} />
         </section>
 
