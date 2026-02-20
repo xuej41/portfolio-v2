@@ -65,24 +65,6 @@ const Projects = () => {
 
             {/* Project 2 */}
             <FeaturedProjectCard
-              id="memory-lane"
-              title="Memory Lane"
-              description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
-              features={[
-                "Instant Facial recognition",
-                "Database storage and retrieval",
-                "Easy to use web interface",
-              ]}
-              imageSrc="/featured/memorylane.jpg?height=300&width=400"
-              technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
-              internalUrl="/projects/memory-lane"
-              githubUrl="#"
-              reverse={true}
-              animationDelay={1}
-            />
-
-            {/* Project 3 */}
-            <FeaturedProjectCard
               id="sumobot-v2"
               title="Autonomous Sumobot V2"
               description="Fully autonomous robotic battle bot designed for competitive environments. Features advanced sensors, real-time decision-making, and robust construction for optimal performance."
@@ -94,6 +76,24 @@ const Projects = () => {
               imageSrc="/featured/sumobot-v22.jpg?height=300&width=400"
               technologies={[]} //"React", "Node.js", "MongoDB", "Stripe"
               internalUrl="/projects/sumobot-v2"
+              githubUrl="#"
+              reverse={true}
+              animationDelay={1}
+            />
+
+            {/* Project 3 */}
+            <FeaturedProjectCard
+              id="memory-lane"
+              title="Memory Lane"
+              description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
+              features={[
+                "Instant Facial recognition",
+                "Database storage and retrieval",
+                "Easy to use web interface",
+              ]}
+              imageSrc="/featured/memorylane.jpg?height=300&width=400"
+              technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
+              internalUrl="/projects/memory-lane"
               githubUrl="#"
               reverse={false}
               animationDelay={2}

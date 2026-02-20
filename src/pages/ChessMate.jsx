@@ -81,7 +81,6 @@ const ChessMate = () => {
             {/* Step 1 */}
             <div className="build-step">
               <div className="build-step-content">
-                <span className="build-step-number">1</span>
                 <h3 className="build-step-title">Design & Planning</h3>
                 <p className="build-step-description">
                   Started with CAD designs for the gantry system. Calculated dimensions based on 
@@ -99,7 +98,6 @@ const ChessMate = () => {
             {/* Step 2 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <span className="build-step-number">2</span>
                 <h3 className="build-step-title">Hardware Assembly</h3>
                 <p className="build-step-description">
                   Assembled the 3-DoF gantry system with stepper motors and drivers. Connected 
@@ -120,7 +118,6 @@ const ChessMate = () => {
             {/* Step 3 */}
             <div className="build-step">
               <div className="build-step-content">
-                <span className="build-step-number">3</span>
                 <h3 className="build-step-title">Computer Vision Integration</h3>
                 <p className="build-step-description">
                   Implemented OpenCV-based piece detection and tracking. Calibrated camera positioning 
@@ -138,7 +135,6 @@ const ChessMate = () => {
             {/* Step 4 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <span className="build-step-number">4</span>
                 <h3 className="build-step-title">Software & AI Integration</h3>
                 <p className="build-step-description">
                   Connected Stockfish chess engine for gameplay logic. Integrated Groq for AI coaching 

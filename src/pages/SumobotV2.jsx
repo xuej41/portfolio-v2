@@ -80,7 +80,6 @@ const SumobotV2 = () => {
             {/* Step 1 */}
             <div className="build-step">
               <div className="build-step-content">
-                <span className="build-step-number">1</span>
                 <h3 className="build-step-title">CAD Design</h3>
                 <p className="build-step-description">
                   Designed the entire chassis in SolidWorks, optimizing for low center of gravity 
@@ -99,7 +98,6 @@ const SumobotV2 = () => {
             {/* Step 2 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <span className="build-step-number">2</span>
                 <h3 className="build-step-title">3D Printing & Assembly</h3>
                 <p className="build-step-description">
                   Printed chassis components using PLA+ for durability. Assembled the mechanical 
@@ -120,7 +118,6 @@ const SumobotV2 = () => {
             {/* Step 3 */}
             <div className="build-step">
               <div className="build-step-content">
-                <span className="build-step-number">3</span>
                 <h3 className="build-step-title">Electronics Integration</h3>
                 <p className="build-step-description">
                   Wired Arduino Nano to motor drivers, sensors, and servo motors. Created custom 
@@ -138,7 +135,6 @@ const SumobotV2 = () => {
             {/* Step 4 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <span className="build-step-number">4</span>
                 <h3 className="build-step-title">Sensor Calibration & Programming</h3>
                 <p className="build-step-description">
                   Calibrated all sensors for accurate distance measurement. Implemented autonomous 
@@ -159,7 +155,6 @@ const SumobotV2 = () => {
             {/* Step 5 */}
             <div className="build-step">
               <div className="build-step-content">
-                <span className="build-step-number">5</span>
                 <h3 className="build-step-title">Testing & Iteration</h3>
                 <p className="build-step-description">
                   Extensive testing on practice rings to fine-tune sensor thresholds, motor speeds, 
