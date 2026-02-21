@@ -77,7 +77,7 @@ const ChessMate = () => {
 
         {/* Build Process Section */}
         <section className="project-section build-process">
-          <h2 className="section-heading">Build Process</h2>
+          <h2 className="section-heading">Gantry Build Process</h2>
           <div className="build-timeline">
             {/* Step 1 */}
             <div className="build-step">
@@ -85,8 +85,20 @@ const ChessMate = () => {
                 <h3 className="build-step-title">Design & Planning</h3>
                 <p className="build-step-description">
                   Started with conceptual designs for the idea, and designs for the gantry system. We decided on a 3-DoF gantry under the chessboard, which would be able to move the master magnet along the XY plane, and a servo to move the magnet up and down (Z).
-                  {/* Add more details about your design process */}
                 </p>
+                <p className="build-step-description">
+                  Parts used for the gantry:
+                </p>
+                <ul className="build-step-description">
+                    <li>1x Creality 42-40 NEMA 17 stepper motor</li>
+                    <li>1x Usongshine Aliexpress stepper motor</li>
+                    <li>2x DRV8825 stepper motor drivers</li>
+                    <li>1x Arduino Uno</li>
+                    <li>2x Creality end stop switches</li>
+                    {/* <li>Range of motion: 60cm x 60cm x 10cm</li>
+                    <li>Positioning accuracy: ±1mm</li>
+                    <li>Max speed: 20cm/s</li> */}
+                </ul>
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
@@ -103,7 +115,7 @@ const ChessMate = () => {
                   I decided to repurpose an old Creality 3D printer's belt-drive gantry system for the X axis movement mechanism. Unfortunately, we a gantry double the size to accomodate for our extra-large chessboard. So I had to completely dissassemble the gantry frame, extend it with a side piece, and buy a new belt double the length of the original, doubling the length of the X axis.
                 </p>
                 <p className="build-step-description">
-                  Luckily, the gantry came with a Creality stepper motor and end stop switch, so apart from rebuilding the frame made the X axis easy to build.
+                  Luckily, the gantry came with a Creality stepper motor and end stop switch, so apart from rebuilding the frame, the X axis was easy to build.
                 </p>
               </div>
               <div className="build-step-images multiple">
@@ -125,19 +137,17 @@ const ChessMate = () => {
             {/* Step 3 */}
             <div className="build-step">
               <div className="build-step-content">
-                <h3 className="build-step-title">Computer Vision Integration</h3>
+                <h3 className="build-step-title">Building the Y Axis</h3>
                 <p className="build-step-description">
-                  standard chessboard sizes and planned motor placement for optimal movement range.
-                  Assembled the 3-DoF gantry system with stepper motors and drivers. Connected 
-                  Arduino Nano for motor control and integrated the electromagnet for piece manipulation.
-                  Implemented OpenCV-based piece detection and tracking. Calibrated camera positioning 
-                  for accurate board state recognition and move detection.
-                  {/* Add more details about CV integration */}
+                  For the Y axis, I decided to use a rack and pinion system. The idea was simple: a stepper motor with a pinion gear would drive a long rack gear attached to the X axis.
                 </p>
               </div>
-              <div className="build-step-images">
+              <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/videos/gantry1.MOV" type="video" alt="Computer vision setup" />
+                  <MediaLightbox src="/featuredprojects/chessmate/rackpinionsingle.jpg" alt="Computer vision setup" />
+                </div>
+                <div className="build-step-image">
+                  <MediaLightbox src="/featuredprojects/chessmate/rackpinionmultiple.jpg" alt="Computer vision setup" />
                 </div>
               </div>
             </div>
@@ -145,22 +155,62 @@ const ChessMate = () => {
             {/* Step 4 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <h3 className="build-step-title">Software & AI Integration</h3>
+                {/* <h3 className="build-step-title">Software & AI Integration</h3> */}
                 <p className="build-step-description">
-                  Connected Stockfish chess engine for gameplay logic. Integrated Groq for AI coaching 
-                  and voice command processing. Built Next.js web app for remote interaction.
-                  {/* Add more details about software integration */}
+                  After printing the rack and pinion gears came the hard part, which was assembling the track for the stepper motor to slide across with minimal friction.
+                  I had to 3D print custom mounts for the stepper motor that would support its weight and provide enough range of motion.
+                </p>
+                <p className="build-step-description">
+                  The initial test with the stepper motor went well. At 12V, the motor + driver only consumed ~300mA!
                 </p>
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Software development" />
+                  <MediaLightbox src="/videos/gantry2.MOV" type="video" alt="Computer vision setup" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Web app interface" />
+                  <MediaLightbox src="/videos/gantry3.MOV" type="video" alt="Computer vision setup" />
                 </div>
               </div>
             </div>
+
+            {/* Step 5 */}
+            <div className="build-step">
+              <div className="build-step-content">
+                <h3 className="build-step-title">Combining Both Axes</h3>
+                <p className="build-step-description">
+                  After building both axes, I had to combine them into a single gantry system. This involved carefully aligning the X and Y axes and securing them together with nuts, bolts and washers in between. I made sure to drill the mounting holes extra wide so that I could adjust if the axes were not perfectly perpendicular.
+                </p>
+              </div>
+              <div className="build-step-images multiple">
+                <div className="build-step-image">
+                  <MediaLightbox src="/featuredprojects/chessmate/attachxy.jpg" alt="Computer vision setup" />
+                </div>
+                <div className="build-step-image">
+                  <MediaLightbox src="/featuredprojects/chessmate/attachxy2.jpg" alt="Computer vision setup" />
+                </div>
+              </div>
+            </div>
+
+            {/* Step 6 */}
+            <div className="build-step reverse">
+              <div className="build-step-content">
+                <h3 className="build-step-title">First Gantry Demo</h3>
+                <p className="build-step-description">
+                  The first gantry demo was a huge milestone for the project. It was the first time we saw the gantry move autonomously, and it was a great proof of concept for the piece movement mechanism. We were able to control the gantry with simple Python commands sent to the Arduino via PySerial. 
+                </p>
+              </div>
+              <div className="build-step-images">
+                <div className="build-step-image">
+                  <MediaLightbox src="/videos/firstgantrydemo.MP4" type="video" alt="First Gantry Demo" />
+                </div>
+              </div>
+            </div>
+
+            <p>
+              More to come...
+            </p>
+
           </div>
         </section>
 
@@ -170,7 +220,7 @@ const ChessMate = () => {
           <ImageCarousel images={[
             { src: "/featuredprojects/chessmate/cardimage.jpg", alt: "ChessMate Image 1" },
             { src: "/featuredprojects/chessmate/coverimage.jpg", alt: "ChessMate Image 2" },
-            { src: "/public/videos/wave_1.mp4", alt: "ChessMate Image 3", type: "video" },
+            // { src: "/public/videos/wave_1.mp4", alt: "ChessMate Image 3", type: "video" },
             { src: "/featuredprojects/chessmate/onstage_josh.jpg", alt: "ChessMate Image 3" },
             { src: "/featuredprojects/chessmate/onstage_neel.jpg", alt: "ChessMate Image 4" },
             { src: "/featuredprojects/chessmate/stage.jpg", alt: "ChessMate Image 5" },
@@ -204,10 +254,10 @@ const ChessMate = () => {
             <div className="tech-category">
               <h3>Hardware</h3>
               <ul>
-                <li>Arduino Nano microcontroller</li>
+                <li>Arduino Uno microcontroller</li>
                 <li>Stepper motors and drivers</li>
                 <li>3-DoF gantry system</li>
-                <li>Electromagnet end effector</li>
+                <li>Electromagnet and Servo</li>
                 <li>Custom 3D printed components</li>
               </ul>
             </div>
