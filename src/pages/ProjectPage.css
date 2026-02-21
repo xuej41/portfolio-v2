@@ -1,0 +1,381 @@
+/* Shared Project Page Styles for: ChessMate.jsx, SumobotV2.jsx, NationalBidders.jsx, MemoryLane.jsx */
+.project-page {
+  min-height: 100vh;
+  background: #1a1a1a;
+  padding: 120px 20px 80px;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.project-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #667eea;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #8b9df0;
+}
+
+.project-page .project-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.project-subtitle {
+  font-size: 1.3rem;
+  color: #bbb;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Hero Media Section */
+.project-hero-media {
+  margin-bottom: 60px;
+}
+
+.media-placeholder {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Section Styles */
+.project-section {
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+}
+
+.section-text {
+  color: #bbb;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Features Grid */
+.project-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 25px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: #667eea;
+}
+
+.feature-card h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #bbb;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-container {
+  width: 100%;
+}
+
+.video-placeholder {
+  background: #2a2a2a;
+  border: 2px dashed #444;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+}
+
+.video-placeholder p {
+  margin: 5px 0;
+}
+
+.video-hint {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Technical Details */
+.tech-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tech-category {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.tech-category h3 {
+  color: #667eea;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.tech-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-category li {
+  color: #bbb;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  font-size: 0.95rem;
+}
+
+.tech-category li:last-child {
+  border-bottom: none;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-link-btn {
+  background: #667eea;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project-link-btn:hover {
+  background: #5a6fd6;
+  transform: translateY(-2px);
+}
+
+.project-link-btn.secondary {
+  background: transparent;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.project-link-btn.secondary:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* Build Process Section (for hardware projects) */
+.build-process {
+  margin-bottom: 60px;
+}
+
+.build-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.build-step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.build-step.reverse {
+  direction: rtl;
+}
+
+.build-step.reverse > * {
+  direction: ltr;
+}
+
+.build-step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.build-step-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.build-step-description {
+  color: #bbb;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+ul.build-step-description {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.build-step-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.build-step-images.multiple {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.build-step-image {
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.build-step-image img,
+.build-step-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .tech-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .build-step {
+    grid-template-columns: 1fr;
+  }
+  
+  .build-step.reverse {
+    direction: ltr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-page {
+    padding: 100px 15px 60px;
+  }
+  
+  .project-page .project-title {
+    font-size: 2.2rem;
+  }
+  
+  .project-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .project-features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-page .project-title {
+    font-size: 1.8rem;
+  }
+  
+  .build-step-images.multiple {
+    grid-template-columns: 1fr;
+  }
+}

@@ -112,7 +112,7 @@
 
 .feature-project-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px; /* adjust this to change the size of the featured project img */
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #444;

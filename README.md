@@ -2,6 +2,8 @@
 
 Second iteration of my personal portfolio website, created using Vite + React.
 
+![landing-page](/public/imgs/landingpage.PNG)
+
 I was inspired to create this project as my first portfolio website [portfolio-v1](https://github.com/xuej41/portfolio), created using vanilla HTML, CSS, and Javascript, did not include a router which I wanted as it would allow me to add more projects with greater detail.
 
 This website is made using [React](https://react.dev/) boostrapped with [Vite](https://vite.dev/) for the frontend, and uses [react-router-dom](https://reactrouter.com/) for routing.
