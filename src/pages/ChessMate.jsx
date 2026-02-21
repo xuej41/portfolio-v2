@@ -34,7 +34,7 @@ const ChessMate = () => {
         <section className="project-hero-media">
           <div className="media-placeholder">
             <img 
-              src="/featuredprojects/chessmate4.jpg" 
+              src="/featuredprojects/chessmate/coverimage.jpg" 
               alt="ChessMate Project Hero" 
               className="hero-image"
             />
@@ -54,7 +54,7 @@ const ChessMate = () => {
 
         {/* Key Features Section */}
         <section className="project-section">
-          <h2 className="section-heading">Key Features</h2>
+          <h2 className="section-heading">Features</h2>
           <div className="project-features-grid">
             <div className="feature-card">
               <h3>🤖 Autonomous Movement</h3>
@@ -84,14 +84,13 @@ const ChessMate = () => {
               <div className="build-step-content">
                 <h3 className="build-step-title">Design & Planning</h3>
                 <p className="build-step-description">
-                  Started with CAD designs for the gantry system. Calculated dimensions based on 
-                  standard chessboard sizes and planned motor placement for optimal movement range.
+                  Started with conceptual designs for the idea, and designs for the gantry system. We decided on a 3-DoF gantry under the chessboard, which would be able to move the master magnet along the XY plane, and a servo to move the magnet up and down (Z).
                   {/* Add more details about your design process */}
                 </p>
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Design phase" />
+                  <MediaLightbox src="/featuredprojects/chessmate/gantry_conceptual.jpg" alt="Conceptual Drawing" />
                 </div>
               </div>
             </div>
@@ -99,22 +98,26 @@ const ChessMate = () => {
             {/* Step 2 */}
             <div className="build-step reverse">
               <div className="build-step-content">
-                <h3 className="build-step-title">Hardware Assembly</h3>
+                <h3 className="build-step-title">Building the X Axis</h3>
                 <p className="build-step-description">
-                  Assembled the 3-DoF gantry system with stepper motors and drivers. Connected 
-                  Arduino Nano for motor control and integrated the electromagnet for piece manipulation.
-                  {/* Add more details about hardware assembly */}
+                  I decided to repurpose an old Creality 3D printer's belt-drive gantry system for the X axis movement mechanism. Unfortunately, we a gantry double the size to accomodate for our extra-large chessboard. So I had to completely dissassemble the gantry frame, extend it with a side piece, and buy a new belt double the length of the original, doubling the length of the X axis.
+                </p>
+                <p className="build-step-description">
+                  Luckily, the gantry came with a Creality stepper motor and end stop switch, so apart from rebuilding the frame made the X axis easy to build.
                 </p>
               </div>
               <div className="build-step-images multiple">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Hardware assembly 1" />
+                  <MediaLightbox src="/featuredprojects/chessmate/gantry0_1.jpg" alt="Hardware assembly 1" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Hardware assembly 2" />
+                  <MediaLightbox src="/featuredprojects/chessmate/gantry0_2.jpg" alt="Hardware assembly 1" />
                 </div>
                 <div className="build-step-image">
-                  <MediaLightbox src="/videos/wave_1.mp4" type="video" alt="Hardware demo" />
+                  <MediaLightbox src="/featuredprojects/chessmate/gantryframe1.jpg" alt="Hardware assembly 2" />
+                </div>
+                <div className="build-step-image">
+                  <MediaLightbox src="/featuredprojects/chessmate/gantryframe2.jpg" alt="Hardware demo" />
                 </div>
               </div>
             </div>
@@ -124,6 +127,9 @@ const ChessMate = () => {
               <div className="build-step-content">
                 <h3 className="build-step-title">Computer Vision Integration</h3>
                 <p className="build-step-description">
+                  standard chessboard sizes and planned motor placement for optimal movement range.
+                  Assembled the 3-DoF gantry system with stepper motors and drivers. Connected 
+                  Arduino Nano for motor control and integrated the electromagnet for piece manipulation.
                   Implemented OpenCV-based piece detection and tracking. Calibrated camera positioning 
                   for accurate board state recognition and move detection.
                   {/* Add more details about CV integration */}
@@ -131,7 +137,7 @@ const ChessMate = () => {
               </div>
               <div className="build-step-images">
                 <div className="build-step-image">
-                  <MediaLightbox src="/featuredprojects/chessmate4.jpg" alt="Computer vision setup" />
+                  <MediaLightbox src="/videos/gantry1.MOV" type="video" alt="Computer vision setup" />
                 </div>
               </div>
             </div>
@@ -158,37 +164,18 @@ const ChessMate = () => {
           </div>
         </section>
 
-        {/* Challenges & Solutions */}
-        <section className="project-section">
-          <h2 className="section-heading">Challenges & Solutions</h2>
-          <div className="challenges-grid">
-            <div className="challenge-card">
-              <h3>⚠️ Challenge: Piece Detection Accuracy</h3>
-              <p>Initial OpenCV setup struggled with lighting variations and similar-colored pieces.</p>
-              <h4>✓ Solution</h4>
-              <p>Implemented adaptive thresholding and added consistent LED lighting to the board enclosure.</p>
-            </div>
-            <div className="challenge-card">
-              <h3>⚠️ Challenge: Gantry Precision</h3>
-              <p>Stepper motor movement had slight positioning errors over multiple moves.</p>
-              <h4>✓ Solution</h4>
-              <p>Added calibration routine and limit switches for accurate home positioning between games.</p>
-            </div>
-            {/* Add more challenges as needed */}
-          </div>
-        </section>
-
         {/* Gallery Section */}
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>
           <ImageCarousel images={[
-            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 1" },
-            { src: "/imgs/whitemode.jpg", alt: "ChessMate Image 2" },
+            { src: "/featuredprojects/chessmate/cardimage.jpg", alt: "ChessMate Image 1" },
+            { src: "/featuredprojects/chessmate/coverimage.jpg", alt: "ChessMate Image 2" },
             { src: "/public/videos/wave_1.mp4", alt: "ChessMate Image 3", type: "video" },
-            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 3" },
-            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 4" },
-            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 5" },
-            { src: "/featuredprojects/chessmate4.jpg", alt: "ChessMate Image 6" },
+            { src: "/featuredprojects/chessmate/onstage_josh.jpg", alt: "ChessMate Image 3" },
+            { src: "/featuredprojects/chessmate/onstage_neel.jpg", alt: "ChessMate Image 4" },
+            { src: "/featuredprojects/chessmate/stage.jpg", alt: "ChessMate Image 5" },
+            { src: "/featuredprojects/chessmate/onstage_josh2.jpg", alt: "ChessMate Image 6" },
+            { src: "/featuredprojects/chessmate/onstage_josh3.jpg", alt: "ChessMate Image 7" }
           ]} />
         </section>
 

@@ -172,26 +172,6 @@ const SumobotV2 = () => {
           </div>
         </section>
 
-        {/* Challenges & Solutions */}
-        <section className="project-section">
-          <h2 className="section-heading">Challenges & Solutions</h2>
-          <div className="challenges-grid">
-            <div className="challenge-card">
-              <h3>⚠️ Challenge: Sensor Interference</h3>
-              <p>Multiple ultrasonic sensors caused cross-talk and inaccurate readings.</p>
-              <h4>✓ Solution</h4>
-              <p>Implemented sequential sensor polling and added shielding between sensor modules.</p>
-            </div>
-            <div className="challenge-card">
-              <h3>⚠️ Challenge: Weight Limit</h3>
-              <p>Initial design exceeded the competition weight limit with the battery pack.</p>
-              <h4>✓ Solution</h4>
-              <p>Redesigned chassis with weight-saving cutouts and switched to lighter motor brackets.</p>
-            </div>
-            {/* Add more challenges as needed */}
-          </div>
-        </section>
-
         {/* Gallery Section */}
         <section className="project-section">
           <h2 className="section-heading">Gallery</h2>

@@ -55,7 +55,7 @@ const Projects = () => {
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
               ]}
-              imageSrc="/featuredprojects/chessmate4.jpg?height=300&width=400"
+              imageSrc="/featuredprojects/chessmate/cardimage.jpg?height=300&width=400"
               technologies={["Python", "Arduino", "Next.js", "Groq"]} 
               internalUrl="/projects/chessmate"
               githubUrl="#"
@@ -95,7 +95,7 @@ const Projects = () => {
               imageSrc="/featuredprojects/memorylane.jpg?height=300&width=400"
               technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
               // internalUrl="/projects/memory-lane"
-              liveUrl="https://devpost.com/software/memory-lane-pwa0fe"
+              liveUrl="https://devpost.com/software/memory-lane-dhke7c"
               githubUrl="#"
               reverse={false}
               animationDelay={2}

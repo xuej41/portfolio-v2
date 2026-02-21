@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useScrollAnimation } from "../hooks/useScrollAnimation"
 import "./Features.css"
 
-const ProjectCard = ({ id, title, description, features, imageSrc, reverse = false, animationDelay = 0 }) => {
+const ProjectCard = ({ id, title, description, features, imageSrc, externalUrl, reverse = false, animationDelay = 0 }) => {
   const [projectRef, projectVisible] = useScrollAnimation()
 
   return (
@@ -21,9 +21,15 @@ const ProjectCard = ({ id, title, description, features, imageSrc, reverse = fal
             </li>
           ))}
         </ul>
-        <Link to={`/projects/${id}`} className="btn btn-primary">
+        {externalUrl ? (
+          <a href={externalUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
             Learn More
-        </Link>
+          </a>
+        ) : (
+          <Link to={`/projects/${id}`} className="btn btn-primary">
+            Learn More
+          </Link>
+        )}
       </div>
       <div className="feature-project-visual">
         <div className="feature-project-image">
@@ -57,7 +63,7 @@ const Features = () => {
                 "Stockfish-powered chess engine logic with real-time gameplay",
                 "Agentic AI coaching, voice commands, and web app integration",
               ]}
-              imageSrc="/featuredprojects/chessmate3.jpg?height=300&width=400"
+              imageSrc="/featuredprojects/chessmate/cardimage.jpg?height=300&width=400"
               reverse={false}
               animationDelay={0}
             />
@@ -72,6 +78,7 @@ const Features = () => {
               "Easy to use web interface",
             ]}
             imageSrc="/featuredprojects/memorylane2.PNG?height=300&width=400"
+            externalUrl="https://devpost.com/software/memory-lane-dhke7c"
             reverse={true}
             animationDelay={1}
           />
@@ -86,6 +93,7 @@ const Features = () => {
                 "Custom designed 3D-printed chassis with 6000mAh battery pack",
               ]}
               imageSrc="/featuredprojects/sumobot-v2.jpg?height=300&width=400"
+              externalUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
               reverse={false}
               animationDelay={2}
             />
@@ -101,6 +109,7 @@ const Features = () => {
               "AI Chatbot Assistant",
             ]}
             imageSrc="/featuredprojects/nbc.png"
+            externalUrl="https://devpost.com/software/national-bidders-of-canada"
             reverse={true}
             animationDelay={3}
           />
