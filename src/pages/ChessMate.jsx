@@ -293,7 +293,7 @@ const ChessMate = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Devpost
+              View Project Submission (Devpost)
             </a>
             <a 
               href="https://github.com/o-bm/ChessMate" 
