@@ -2,7 +2,7 @@
 
 Second iteration of my personal portfolio website, created using Vite + React.
 
-![landing-page](/public/imgs/landingpage.PNG)
+<img src="./public/imgs/landingpage.PNG" alt="landing-page" width="800" />
 
 I was inspired to create this project as my first portfolio website [portfolio-v1](https://github.com/xuej41/portfolio), created using vanilla HTML, CSS, and Javascript, did not include a router which I wanted as it would allow me to add more projects with greater detail.
 
