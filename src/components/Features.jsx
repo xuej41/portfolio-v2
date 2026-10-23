@@ -83,6 +83,21 @@ const Features = () => {
             animationDelay={1}
           />
           {/* Project 3 */}
+          <ProjectCard
+            id="chroot-arch"
+            title="Linux System Recovery: Chroot into Arch"
+            description="YouTube tutorial - Repairing an unbootable Arch Linux install from a live USB using chroot."
+            features={[
+              "Mounted the installed root filesystem from an Arch live USB",
+              "Chroot isolation, the primitive behind Linux containers",
+              "Downgraded a broken GRUB package to restore the boot process",
+            ]}
+            imageSrc="/moreprojects/chroot_video.PNG?height=300&width=400"
+            externalUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
+            reverse={false}
+            animationDelay={2}
+          />
+          {/* Project 4 */}
             <ProjectCard
               id="sumobot-v2"
               title="Autonomous Sumobot V2"
@@ -94,25 +109,9 @@ const Features = () => {
               ]}
               imageSrc="/featuredprojects/sumobot-v2.jpg?height=300&width=400"
               externalUrl="https://github.com/xuej41/arduino-projects/tree/main/sumobot-v2"
-              reverse={false}
-              animationDelay={2}
+              reverse={true}
+              animationDelay={3}
             />
-          {/* Project 4 */}
-          <ProjectCard
-            id="national-bidders"
-            title="National Bidders of Canada"
-            description="QHacks hackathon project - Dynamic live auction platform. Live cross-platform bids, list items, user authentication."
-            features={[
-              "Real-time bids and inventory tracking",
-              "Admin dashboard with analytics",
-              "Secure user authentication and payment processing",
-              "AI Chatbot Assistant",
-            ]}
-            imageSrc="/featuredprojects/nbc.png"
-            externalUrl="https://devpost.com/software/national-bidders-of-canada"
-            reverse={true}
-            animationDelay={3}
-          />
         </div>
 
         <div className="features-cta">

@@ -84,6 +84,24 @@ const Projects = () => {
 
             {/* Project 3 */}
             <FeaturedProjectCard
+              id="chroot-arch"
+              title="Linux System Recovery: Chroot into Arch"
+              description="YouTube tutorial - Repairing an unbootable Arch Linux install from a live USB using chroot."
+              features={[
+                "Mounted the installed root filesystem from an Arch live USB",
+                "Chroot isolation, the primitive behind Linux containers",
+                "Downgraded a broken GRUB package to restore the boot process",
+              ]}
+              imageSrc="/moreprojects/chroot_video.PNG?height=300&width=400"
+              technologies={["Bash", "Grub", "Chroot", "Pacman", "Live USB"]}
+              liveUrl="https://www.youtube.com/watch?v=t-bdztED6Sg"
+              githubUrl="#"
+              reverse={false}
+              animationDelay={2}
+            />
+
+            {/* Project 4 */}
+            <FeaturedProjectCard
               id="memory-lane"
               title="Memory Lane"
               description="Deltahacks hackathon project - Facial recognition web app to assist Alzheimer's patients with memory recall. Deployed to Streamlit Cloud."
@@ -96,26 +114,6 @@ const Projects = () => {
               technologies={["Streamlit", "OpenCV", "MongoDB", "Python"]}
               // internalUrl="/projects/memory-lane"
               liveUrl="https://devpost.com/software/memory-lane-dhke7c"
-              githubUrl="#"
-              reverse={false}
-              animationDelay={2}
-            />
-
-            {/* Project 4 */}
-            <FeaturedProjectCard
-              id="national-bidders"
-              title="National Bidders of Canada"
-              description="QHacks hackathon project - Dynamic live auction platform. Live cross-platform bids, list items, user authentication."
-              features={[
-                "Real-time bids and inventory tracking",
-                "Admin dashboard with analytics",
-                "Secure user authentication and payment processing",
-                "AI Chatbot Assistant",
-              ]}
-              imageSrc="/featuredprojects/nbc2.jpg"
-              technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
-              // internalUrl="/projects/national-bidders"
-              liveUrl="https://devpost.com/software/national-bidders-of-canada"
               githubUrl="#"
               reverse={true}
               animationDelay={3}
@@ -133,7 +131,19 @@ const Projects = () => {
         >
           <h2 className="section-title">More Projects</h2>
           <div className="projects-grid">
-            {/* Project 4 */}
+            {/* Project 5 */}
+            <AdditionalProjectCard
+              title="National Bidders of Canada"
+              description="QHacks hackathon project - Dynamic live auction platform. Live cross-platform bids, list items, user authentication."
+              imageSrc="/featuredprojects/nbc.png?height=200&width=300"
+              technologies={["Next.js", "Typescript", "Tailwind CSS", "PostgreSQL", "Supabase"]}
+              links={[
+                { label: "Devpost", url: "https://devpost.com/software/national-bidders-of-canada" }
+              ]}
+              animationDelay={0}
+            />
+
+            {/* Project 6 */}
             <AdditionalProjectCard
               title="Git Tissues Task Management App"
               description="ConUHacks hackathon project - Collaborative project management tool to sort Git Issues using AI GitHub profile analysis. Streamlines workflow with intuitive drag-and-drop interface and progress tracking."
@@ -143,22 +153,10 @@ const Projects = () => {
                 { label: "GitHub", url: "https://github.com/MarcoDava/ConUHacks" },
                 { label: "Devpost", url: "https://devpost.com/software/git-tissues" }
               ]}
-              animationDelay={0}
+              animationDelay={1}
             />
 
-            {/* Project 5 */}
-            <AdditionalProjectCard
-              title="Chroot Arch Linux using Live USB"
-              description="YouTube video project - Using Arch's Chroot feature to fix bootloader and package issues through a live usb."
-              imageSrc="/moreprojects/chroot_video.PNG?height=200&width=300"
-              technologies={["Bash", "Grub", "Chroot", "SDDM", "Live USB"]}
-              links={[
-                { label: "YouTube", url: "https://www.youtube.com/watch?v=t-bdztED6Sg" }
-              ]}
-              animationDelay={2}
-            />
-
-            {/* Project 6 */}
+            {/* Project 7 */}
             <AdditionalProjectCard
               title="PlanetPal Waste Management Assistant"
               description="TerraHacks hackathon project - Personal waste management assistant web app. Instant communication capabilities, built with advanced features for efficiency and engagement."
@@ -168,10 +166,10 @@ const Projects = () => {
                 { label: "GitHub", url: "https://github.com/PakmanGames/PlanetPal" },
                 { label: "Devpost", url: "https://devpost.com/software/planetpal-thq27l" }
               ]}
-              animationDelay={1}
+              animationDelay={2}
             />
 
-            {/* Project 7 */}
+            {/* Project 8 */}
             <AdditionalProjectCard
               title="Cry of Fear on Arch Linux"
               description="YouTube video project - Running Cry of Fear on Arch Linux through Steam Proton."
@@ -180,10 +178,10 @@ const Projects = () => {
               links={[
                 { label: "YouTube", url: "https://www.youtube.com/watch?v=_ps8ADqXLXI" }
               ]}
-              animationDelay={2}
+              animationDelay={0}
             />
 
-            {/* Project 8 */}
+            {/* Project 9 */}
             <AdditionalProjectCard
               title="Sumobot"
               description="McMaster Sumobot Competition - Building an autonomous miniature battlebot using Arduino and CAD."
@@ -192,10 +190,10 @@ const Projects = () => {
               links={[
                 { label: "GitHub", url: "https://github.com/xuej41/arduino-projects/tree/main/sumobot" }
               ]}
-              animationDelay={0}
+              animationDelay={1}
             />
 
-            {/* Project 9 */}
+            {/* Project 10 */}
             <AdditionalProjectCard
               title="Portfolio Website"
               description="Personal Portfolio Website, designed and built by me. Deployed to Vercel with a custom domain."
@@ -204,10 +202,10 @@ const Projects = () => {
               links={[
                 { label: "GitHub", url: "https://github.com/xuej41/portfolio-v2" }
               ]}
-              animationDelay={1}
+              animationDelay={2}
             />
 
-            {/* Project 10 */}
+            {/* Project 11 */}
             <AdditionalProjectCard
               title="Legacy Portfolio Website"
               description="Leagacy Portfolio Website, designed and built by me. Deployed to Vercel."
@@ -217,10 +215,10 @@ const Projects = () => {
                 { label: "Website", url: "https://joshx.vercel.app/" },
                 { label: "GitHub", url: "https://github.com/xuej41/portfolio" }
               ]}
-              animationDelay={1}
+              animationDelay={0}
             />
 
-            {/* Project 11 */}
+            {/* Project 12 */}
             <AdditionalProjectCard
               title="ATM Finder"
               description="YRHacks hackathon project - Shows the nearest ATMs and other amenities on a map."
@@ -229,10 +227,10 @@ const Projects = () => {
               links={[
                 { label: "Devpost", url: "https://devpost.com/software/atm-finder-3a25tf" }
               ]}
-              animationDelay={2}
+              animationDelay={1}
             />
 
-            {/* Project 12 */}
+            {/* Project 13 */}
             <AdditionalProjectCard
               title="Banana"
               description="🍌 A webpage all about bananas, no seriously."
@@ -242,7 +240,7 @@ const Projects = () => {
                 { label: "GitHub", url: "https://github.com/xuej41/banana-landing-page" },
                 { label: "Website", url: "https://xuej41.github.io/banana-landing-page/" }
               ]}
-              animationDelay={0}
+              animationDelay={2}
             />
 
           </div>
